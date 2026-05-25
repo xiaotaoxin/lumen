@@ -16,6 +16,7 @@ import llmRoutes from "./routes/llm";
 import charactersRoutes from "./routes/characters";
 import storyboardsRoutes from "./routes/storyboards";
 import seriesRoutes from "./routes/series";
+import scriptRoutes from "./routes/script";
 
 const app = new Hono();
 
@@ -56,6 +57,7 @@ app.route("/api/llm", llmRoutes);
 app.route("/api/characters", charactersRoutes);
 app.route("/api/storyboards", storyboardsRoutes);
 app.route("/api/series", seriesRoutes);
+app.route("/api/script", scriptRoutes);
 
 // Data migration from localStorage (open, idempotent)
 app.post("/api/migrate", async (c) => {

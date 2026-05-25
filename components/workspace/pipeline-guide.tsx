@@ -3,7 +3,7 @@
 import * as React from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import { Check, ArrowRight, Sparkles, FileEdit, Camera, Film, BookOpen, Download } from "lucide-react";
+import { Check, ArrowRight, BookOpen, Camera, Clapperboard, Download, Film, Sparkles, User } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const BACKEND = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:3001/api";
@@ -36,17 +36,19 @@ export function PipelineGuide() {
     async function load() {
       const defs: StepDef[] = [
         {
-          key: "prompt", label: "写提示词", icon: FileEdit, href: "/app/text-to-image",
+          key: "script", label: "剧本分析", icon: BookOpen, href: "/app/script",
           check: async () => {
-            const sessions = await fetchJson("/sessions") as Array<{ id: string }>;
-            return sessions.length > 0;
+            const subjects = await fetchJson("/subjects") as Array<{ id: string }>;
+            return subjects.length >= 2; // Has some subjects created from script
           },
         },
         {
-          key: "generate", label: "生成图像", icon: Sparkles, href: "/app/text-to-image",
+          key: "subjects", label: "角色设定图", icon: User, href: "/app/subjects",
           check: async () => {
-            const gens = await fetchJson("/generations") as Array<{ status: string }>;
-            return gens.some((g: { status: string }) => g.status === "succeeded");
+            const assets = await fetchJson("/characters") as Array<{ subjectId?: string }>;
+            // Check if any subject has generated character assets
+            const subjects = await fetchJson("/subjects") as Array<{ id: string }>;
+            return assets.length > 0 || subjects.length >= 3;
           },
         },
         {
@@ -57,16 +59,22 @@ export function PipelineGuide() {
           },
         },
         {
-          key: "frames", label: "逐帧生成", icon: Film, href: "/app/storyboards",
+          key: "frames", label: "生成分镜图", icon: Film, href: "/app/storyboards",
           check: async () => {
             const boards = await fetchJson("/storyboards") as Array<{ id: string; frameCount: number }>;
             if (boards.length === 0) return false;
-            // Check if any storyboard has frames with generated images
-            for (const b of boards) {
+            for (const b of boards.slice(0, 3)) {
               const full = await fetchJson(`/storyboards/${b.id}`) as { frames?: Array<{ status: string }> };
               if (full.frames?.some((f: { status: string }) => f.status === "succeeded")) return true;
             }
             return false;
+          },
+        },
+        {
+          key: "video", label: "图生视频", icon: Clapperboard, href: "/app/image-to-video",
+          check: async () => {
+            const gens = await fetchJson("/generations?kind=video") as Array<{ status: string }>;
+            return gens.some((g: { status: string }) => g.status === "succeeded");
           },
         },
         {
@@ -78,7 +86,7 @@ export function PipelineGuide() {
         },
         {
           key: "export", label: "导出成片", icon: Download, href: "/app/series",
-          check: async () => false, // Always manual
+          check: async () => false,
         },
       ];
 

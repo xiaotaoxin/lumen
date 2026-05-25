@@ -27,15 +27,16 @@ interface RailItem {
 }
 
 const ITEMS: RailItem[] = [
+  { key: "script",      label: "剧本",  icon: BookOpen,     href: "/app/script" },
   { key: "create",      label: "创作",  icon: Sparkles,    href: "/app/text-to-image",  remember: true },
   { key: "video",       label: "视频",  icon: Clapperboard, href: "/app/image-to-video", remember: true },
-  { key: "audio",       label: "音频",  icon: Mic2,         href: "/app/audio",          remember: true },
-  { key: "canvas",      label: "画布",  icon: Frame,        href: "/app/canvas",         remember: true },
-  { key: "tools",       label: "工具",  icon: Wrench,       href: "/app/tools",          remember: true },
-  { key: "library",     label: "作品",  icon: FolderOpen,   href: "/app/history" },
   { key: "storyboards", label: "分镜",  icon: Film,         href: "/app/storyboards" },
   { key: "series",      label: "剧集",  icon: BookOpen,     href: "/app/series" },
+  { key: "audio",       label: "音频",  icon: Mic2,         href: "/app/audio",          remember: true },
+  { key: "canvas",      label: "画布",  icon: Frame,        href: "/app/canvas",         remember: true },
   { key: "subjects",    label: "主体",  icon: Users2,       href: "/app/subjects" },
+  { key: "library",     label: "作品",  icon: FolderOpen,   href: "/app/history" },
+  { key: "tools",       label: "工具",  icon: Wrench,       href: "/app/tools",          remember: true },
 ];
 
 export function IconRail() {
