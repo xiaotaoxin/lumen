@@ -9,12 +9,16 @@ import { cn } from "@/lib/utils";
 const BACKEND = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:3001/api";
 
 async function fetchJson(path: string) {
-  const token = (await import("@/lib/api/client")).getToken();
-  const res = await fetch(`${BACKEND}${path}`, {
-    headers: token ? { Authorization: `Bearer ${token}` } : {},
-  });
-  if (!res.ok) return [];
-  return res.json();
+  try {
+    const token = (await import("@/lib/api/client")).getToken();
+    const res = await fetch(`${BACKEND}${path}`, {
+      headers: token ? { Authorization: `Bearer ${token}` } : {},
+    });
+    if (!res.ok) return [];
+    return res.json();
+  } catch {
+    return [];
+  }
 }
 
 interface StepDef {
@@ -45,10 +49,8 @@ export function PipelineGuide() {
         {
           key: "subjects", label: "角色设定图", icon: User, href: "/app/subjects",
           check: async () => {
-            const assets = await fetchJson("/characters") as Array<{ subjectId?: string }>;
-            // Check if any subject has generated character assets
             const subjects = await fetchJson("/subjects") as Array<{ id: string }>;
-            return assets.length > 0 || subjects.length >= 3;
+            return subjects.length >= 3;
           },
         },
         {
@@ -62,12 +64,7 @@ export function PipelineGuide() {
           key: "frames", label: "生成分镜图", icon: Film, href: "/app/storyboards",
           check: async () => {
             const boards = await fetchJson("/storyboards") as Array<{ id: string; frameCount: number }>;
-            if (boards.length === 0) return false;
-            for (const b of boards.slice(0, 3)) {
-              const full = await fetchJson(`/storyboards/${b.id}`) as { frames?: Array<{ status: string }> };
-              if (full.frames?.some((f: { status: string }) => f.status === "succeeded")) return true;
-            }
-            return false;
+            return boards.some((b: { frameCount: number }) => b.frameCount > 0);
           },
         },
         {
@@ -99,8 +96,8 @@ export function PipelineGuide() {
     load();
     return () => { cancelled = true; };
 
-    // Re-check every 10 seconds
-    const interval = setInterval(load, 10000);
+    // Re-check every 30 seconds
+    const interval = setInterval(load, 30000);
     return () => { clearInterval(interval); };
   }, []);
 
