@@ -132,6 +132,20 @@ export function runMigrations(): void {
       completed_at     TEXT
     );
     CREATE INDEX IF NOT EXISTS idx_media_tasks_user ON media_tasks(user_id);
+
+    CREATE TABLE IF NOT EXISTS character_assets (
+      id              TEXT PRIMARY KEY,
+      subject_id      TEXT NOT NULL REFERENCES subjects(id) ON DELETE CASCADE,
+      user_id         TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+      kind            TEXT NOT NULL CHECK (kind IN ('full_body', 'three_views', 'headshot')),
+      image_url       TEXT,
+      prompt_used     TEXT,
+      status          TEXT NOT NULL DEFAULT 'idle' CHECK (status IN ('idle', 'running', 'succeeded', 'failed')),
+      error_message   TEXT,
+      created_at      TEXT NOT NULL,
+      updated_at      TEXT NOT NULL
+    );
+    CREATE INDEX IF NOT EXISTS idx_character_assets_subject ON character_assets(subject_id);
   `);
 
   // Run Drizzle Kit migrations if any

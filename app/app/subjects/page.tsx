@@ -2,12 +2,13 @@
 
 import * as React from "react";
 import { useRouter } from "next/navigation";
-import { Plus, Search, Sparkles, Pencil, Trash2 } from "lucide-react";
+import { Plus, Search, Sparkles, Pencil, Trash2, User } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { SubjectManager } from "@/components/workspace/subject-manager";
+import { CharacterWorkbench } from "@/components/workspace/character-workbench";
 import { useAuthStore } from "@/lib/store/auth-store";
 import * as subjectsApi from "@/lib/api/subjects";
 import { formatRelativeTime } from "@/lib/utils";
@@ -20,6 +21,7 @@ export default function SubjectsPage() {
   const [loading, setLoading] = React.useState(true);
   const [reloadKey, setReloadKey] = React.useState(0);
   const [managerOpen, setManagerOpen] = React.useState(false);
+  const [workbenchSubject, setWorkbenchSubject] = React.useState<Subject | null>(null);
   const [q, setQ] = React.useState("");
 
   React.useEffect(() => {
@@ -135,6 +137,14 @@ export default function SubjectsPage() {
                   <Sparkles className="size-3.5" />
                   去创作
                 </Button>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => setWorkbenchSubject(s)}
+                >
+                  <User className="size-3.5" />
+                  角色工作台
+                </Button>
                 <Button variant="ghost" size="icon-sm" onClick={() => setManagerOpen(true)} title="编辑">
                   <Pencil className="size-3.5" />
                 </Button>
@@ -148,6 +158,11 @@ export default function SubjectsPage() {
       )}
 
       <SubjectManager open={managerOpen} onOpenChange={setManagerOpen} onChange={reload} />
+      <CharacterWorkbench
+        open={!!workbenchSubject}
+        onOpenChange={(v) => { if (!v) setWorkbenchSubject(null); }}
+        subject={workbenchSubject}
+      />
     </div>
   );
 }
