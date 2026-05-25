@@ -139,7 +139,7 @@ async function generateFrameImage(frameId: string, prompt: string): Promise<void
   try {
     const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024"><rect fill="#1a1a2e" width="1024" height="1024"/><rect fill="#16213e" x="80" y="80" width="864" height="864" rx="16"/><text fill="#e94560" font-family="sans-serif" font-size="28" x="512" y="480" text-anchor="middle">Storyboard Frame</text><text fill="#888" font-family="sans-serif" font-size="16" x="512" y="520" text-anchor="middle">${prompt.slice(0, 50)}</text></svg>`;
     const dataUrl = "data:image/svg+xml;base64," + Buffer.from(svg).toString("base64");
-    db.prepare("UPDATE storyboard_frames SET image_url = ?, status = 'succeeded', prompt_used = ?, updated_at = ? WHERE id = ?")
+    db.prepare("UPDATE storyboard_frames SET image_url = ?, status = 'succeeded', image_prompt = ?, updated_at = ? WHERE id = ?")
       .run(dataUrl, prompt || "", now(), frameId);
   } catch (err) {
     db.prepare("UPDATE storyboard_frames SET status = 'failed', error_message = ?, updated_at = ? WHERE id = ?")
