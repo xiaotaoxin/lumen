@@ -1,0 +1,4024 @@
+[     112ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[     188ms] [LOG] [Fast Refresh] done in 178ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[     254ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[     292ms] [LOG] [HMR] connected @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  163798ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  163906ms] [LOG] [Fast Refresh] done in 119ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  173279ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  173406ms] [LOG] [Fast Refresh] done in 138ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  223097ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  223201ms] [LOG] [Fast Refresh] done in 143ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  236657ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  236730ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:3272
+[  236730ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:3272
+[  236768ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:3272
+[  236769ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:3272
+[  236874ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  237126ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:3272
+[  237126ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:3272
+[  237237ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  237436ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:3272
+[  237436ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:3272
+[  237437ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3007/admin/registrations?_rsc=1pugu:0
+[  237449ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3007/admin/registrations?_rsc=1pugu:0
+[  237466ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3007/admin/registrations:0
+[  237557ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3007/_next/static/chunks/node_modules_react-dom_0bruynb._.js:15305
+[  237607ms] Error: ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed
+
+
+    at <unknown> (Error: ./app/app/text-to-image/page.tsx:299:4)
+    at Object.getCompilationErrors (file://D:\lumen\node_modules\next\dist\server\dev\hot-reloader-turbopack.js:1186:59)
+    at DevBundlerService.getCompilationError (file://D:\lumen\node_modules\next\dist\server\lib\dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file://D:\lumen\node_modules\next\dist\server\dev\next-dev-server.js:719:42)
+    at DevServer.findPageComponents (file://D:\lumen\node_modules\next\dist\server\dev\next-dev-server.js:689:43)
+    at async DevServer.renderErrorToResponseImpl (file://D:\lumen\node_modules\next\dist\server\base-server.js:1745:26)
+[  237608ms] [LOG] [HMR] connected @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  237610ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  237610ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  237625ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  237626ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  237678ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  237678ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  237742ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  237742ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  237807ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  237807ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  237870ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  237871ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  237932ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  237932ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  237995ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  237995ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238058ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238058ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238121ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238121ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238185ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238186ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238248ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238248ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238312ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238312ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238375ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238375ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238439ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238439ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238501ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238502ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238565ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238565ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238626ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238626ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238688ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238688ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238753ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238753ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238813ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238814ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238878ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238878ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238940ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  238940ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239003ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239004ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239067ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239067ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239132ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239132ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239193ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239193ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239257ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239257ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239321ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239321ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239382ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239383ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239447ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239447ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239509ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239509ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239570ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239570ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239634ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239634ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239695ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239695ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239757ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239757ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239820ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239820ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239883ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239883ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239945ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  239945ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240007ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240007ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240070ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240070ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240134ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240134ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240198ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240198ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240260ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240261ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240324ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240324ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240389ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240389ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240453ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240453ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240512ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240512ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240575ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240575ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240637ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240637ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240702ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240702ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240766ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240766ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240828ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240829ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240891ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240891ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240952ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240953ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241015ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241015ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241079ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241080ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241143ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241143ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241206ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241207ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241270ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241271ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241334ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241335ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241396ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241396ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241459ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241459ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241523ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241523ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241585ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241585ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241647ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241647ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241709ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241709ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241773ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241774ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241838ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241838ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241901ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241901ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241962ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241962ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242026ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242026ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242089ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242089ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242152ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242153ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242215ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242216ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242277ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242278ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242341ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242341ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242406ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242406ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242469ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242469ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242531ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242531ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242593ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242593ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242656ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242656ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242719ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242719ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242782ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242782ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242847ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242847ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242909ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242910ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242974ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  242974ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243037ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243037ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243100ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243101ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243166ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243166ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243227ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243228ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243291ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243291ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243353ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243353ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243415ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243415ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243479ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243479ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243539ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243539ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243602ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243603ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243664ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243664ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243728ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243728ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243791ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243791ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243853ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243854ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243919ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243920ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243983ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  243984ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244046ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244046ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244109ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244109ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244172ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244172ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244235ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244235ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244298ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244298ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244361ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244361ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244426ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244426ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244488ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244488ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244550ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244551ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244611ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244611ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244676ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244677ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244737ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244737ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244799ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244800ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244861ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244861ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244922ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244922ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244987ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  244987ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245050ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245050ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245113ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245113ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245177ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245177ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245241ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245241ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245304ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245304ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245368ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245368ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245432ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245432ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245495ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245495ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245557ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245557ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245620ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245620ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245683ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245683ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245747ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245748ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245810ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245811ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245874ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245874ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245938ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  245938ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246002ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246002ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246063ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246064ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246126ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246127ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246190ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246190ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246253ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246253ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246315ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246315ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246377ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246377ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246439ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246439ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246503ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246503ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246563ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246563ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246625ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246625ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246688ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246689ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246749ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246749ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246811ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246811ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246875ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246875ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246938ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  246938ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247002ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247003ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247066ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247066ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247129ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247129ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247193ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247193ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247255ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247255ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247320ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247320ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247382ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247383ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247445ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247446ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247507ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247507ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247569ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247570ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247634ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247634ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247697ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247697ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247758ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247758ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247820ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247820ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247885ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247885ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247947ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  247947ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248010ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248010ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248073ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248073ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248136ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248136ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248199ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248200ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248263ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248264ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248326ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248326ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248388ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248388ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248453ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248454ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248516ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248516ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248579ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248580ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248642ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248643ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248706ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248706ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248768ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248769ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248833ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248834ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248895ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248895ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248960ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  248960ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249021ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249022ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249083ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249083ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249146ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249146ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249208ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249208ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249271ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249271ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249334ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249334ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249396ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249396ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249460ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249460ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249522ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249523ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249583ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249583ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249647ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249647ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249710ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249711ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249772ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249772ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249835ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249836ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249897ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249897ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249959ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  249959ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  250021ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  250021ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  250084ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  250084ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  250145ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  250145ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  250210ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  250210ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  250273ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  250273ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  250324ms] [ERROR] ./app/app/text-to-image/page.tsx:299:4
+Expected ',', got ';'
+  297 |     // Clear the prompt so the next message can be written
+  298 |     setPrompt("");
+> 299 |   };
+      |    ^
+  300 |
+  301 |   const cancelLatest = async () => {
+  302 |     const lastRunning = [...stream].reverse().find((g) => g.status === "running");
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  250324ms] [ERROR] ./app/app/text-to-image/page.tsx:459:1
+Expected '}', got '<eof>'
+  457 |   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  458 | }
+> 459 |
+      | ^
+
+Parsing ecmascript source code failed @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  250391ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  250456ms] [LOG] [Fast Refresh] done in 128ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  250577ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  250591ms] [LOG] [Fast Refresh] done in 118ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  250640ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  250659ms] [LOG] [HMR] connected @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  270806ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  270915ms] [LOG] [Fast Refresh] done in 162ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  358049ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  358143ms] [LOG] [Fast Refresh] done in 144ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  397573ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  397699ms] [LOG] [Fast Refresh] done in 92ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  399930ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/api/auth/me:0
+[  402240ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  402329ms] [LOG] [Fast Refresh] done in 91ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  710621ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  710937ms] [LOG] [Fast Refresh] done in 415ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  711043ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  711262ms] [LOG] [Fast Refresh] done in 321ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  744105ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  744385ms] [LOG] [Fast Refresh] done in 377ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  744751ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  744807ms] [LOG] [Fast Refresh] done in 159ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  757726ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  757848ms] [LOG] [Fast Refresh] done in 102ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  767689ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  767747ms] [LOG] [Fast Refresh] done in 67ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  812828ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  812917ms] [LOG] [Fast Refresh] done in 92ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  814500ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  814589ms] [LOG] [Fast Refresh] done in 59ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  834114ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  834176ms] [LOG] [Fast Refresh] done in 60ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1039794ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1039875ms] [LOG] [Fast Refresh] done in 107ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
