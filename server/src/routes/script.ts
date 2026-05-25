@@ -108,9 +108,13 @@ script.post("/apply", async (c) => {
     shots.forEach((shot: Record<string, string>, i: number) => {
       const fId = shortId("sf_");
       const prompt = [shot.description || "", `${shot.shotSize || "中景"}·${shot.cameraAngle || "平视"}·${shot.cameraMovement || "固定"}`].filter(Boolean).join("，");
+      // Auto-calculate duration: base 2s + dialogue length factor
+      const dialogueLen = (shot.dialogue || "").length;
+      const descLen = (shot.description || "").length;
+      const duration = Math.min(30, Math.max(1, 2 + Math.floor(dialogueLen / 15) + (descLen > 60 ? 1 : 0)));
       db.prepare(
-        "INSERT INTO storyboard_frames (id, storyboard_id, order_index, shot_description, shot_size, camera_angle, camera_movement, dialogue, speaker, image_prompt, status, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'idle', ?, ?)"
-      ).run(fId, sbId, i, shot.description || "", shot.shotSize || "中景", shot.cameraAngle || "平视", shot.cameraMovement || "固定", shot.dialogue || "", shot.speaker || "", prompt, now(), now());
+        "INSERT INTO storyboard_frames (id, storyboard_id, order_index, shot_description, shot_size, camera_angle, camera_movement, dialogue, speaker, image_prompt, duration, status, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'idle', ?, ?)"
+      ).run(fId, sbId, i, shot.description || "", shot.shotSize || "中景", shot.cameraAngle || "平视", shot.cameraMovement || "固定", shot.dialogue || "", shot.speaker || "", prompt, duration, now(), now());
       created.storyboardFrames.push(fId);
     });
     created["storyboardId"] = [sbId];

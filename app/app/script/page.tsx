@@ -146,7 +146,17 @@ export default function ScriptPage() {
   // Frame actions
   const updateFrame = async (fid: string, patch: Record<string, unknown>) => {
     if (!storyboardId) return;
-    setFrames(prev => prev.map(f => f.id === fid ? { ...f, ...patch } : f));
+    setFrames(prev => prev.map(f => {
+      if (f.id !== fid) return f;
+      const next = { ...f, ...patch } as FrameItem;
+      // Auto-calculate duration when dialogue or description changes
+      if (patch.dialogue !== undefined || patch.shotDescription !== undefined) {
+        const dLen = (next.dialogue || "").length;
+        const descLen = (next.shotDescription || "").length;
+        next.duration = Math.min(30, Math.max(1, 2 + Math.floor(dLen / 15) + (descLen > 60 ? 1 : 0)));
+      }
+      return next;
+    }));
     try { await fetchJson(`/storyboards/${storyboardId}/frames/${fid}`, { method: "PATCH", body: JSON.stringify(patch) }); } catch { /* noop */ }
   };
 

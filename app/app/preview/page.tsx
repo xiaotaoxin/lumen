@@ -4,7 +4,7 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense } from "react";
-import { Play, Pause, SkipBack, SkipForward, Check, Loader2 } from "lucide-react";
+import { Play, Pause, SkipBack, SkipForward, Check, Download, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { PipelineGuide } from "@/components/workspace/pipeline-guide";
@@ -67,6 +67,46 @@ function PreviewInner() {
 
   const currentFrame = frames[current];
   const videosDone = frames.filter(f => f.videoUrl).length;
+  const totalDuration = frames.reduce((s, f) => s + (f.duration || 3), 0);
+
+  const downloadHtml = () => {
+    const frameList = frames.map((f, i) => {
+      const src = f.videoUrl || f.imageUrl || "";
+      const dur = (f.duration || 3) * 1000;
+      return `{src:"${src}",dur:${dur},desc:"${(f.shotDescription || "").replace(/"/g, '\\"')}",speaker:"${f.speaker || ""}",dialogue:"${(f.dialogue || "").replace(/"/g, '\\"')}"}`;
+    }).join(",\n");
+
+    const html = `<!DOCTYPE html><html lang="zh"><head><meta charset="UTF-8"><title>${title}</title><style>
+*{margin:0;padding:0;box-sizing:border-box}body{background:#000;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;overflow:hidden}
+.viewer{position:relative;width:90vw;max-width:1200px;aspect-ratio:16/9;overflow:hidden;border-radius:16px}
+.viewer img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.info{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.85));padding:24px;color:#fff}
+.info .badge{display:inline-block;border:1px solid rgba(255,255,255,.2);border-radius:99px;padding:2px 8px;font-size:11px;margin-bottom:4px}
+.info .desc{font-size:14px;color:rgba(255,255,255,.6)}
+.info .dialogue{font-size:12px;color:rgba(255,255,255,.4);font-style:italic;margin-top:2px}
+.bar{display:flex;gap:2px;padding:16px;max-width:600px;width:100%}
+.bar button{flex:1;height:3px;border:none;border-radius:2px;background:rgba(255,255,255,.15);cursor:pointer}
+.bar button.active{background:#fff}.bar button.done{background:rgba(255,255,255,.4)}
+</style></head><body>
+<div class="viewer" id="v"><img id="img"><div class="info" id="info"></div></div>
+<div class="bar" id="bar"></div>
+<script>
+const F=[${frameList}];let cur=0,t;
+function show(i){cur=i;document.getElementById("img").src=F[i].src;
+document.getElementById("info").innerHTML='<span class="badge">#'+(i+1)+'</span>'+(F[i].speaker?' <b>'+F[i].speaker+'</b>':'')+'<div class="desc">'+F[i].desc+'</div>'+(F[i].dialogue?'<div class="dialogue">"'+F[i].dialogue+'"</div>':'');
+document.querySelectorAll("#bar button").forEach((b,j)=>{b.className=j===i?"active":j<i?"done":""})}
+function play(){if(cur>=F.length-1){cur=0};show(cur);t=setTimeout(()=>{cur++;play()},F[cur].dur||3000)}
+function stop(){clearTimeout(t)}
+F.forEach((f,i)=>{const b=document.createElement("button");b.onclick=()=>{stop();show(i)};document.getElementById("bar").appendChild(b)});
+show(0);play();
+</script></body></html>`;
+
+    const blob = new Blob([html], { type: "text/html" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url; a.download = `${title}.html`; a.click();
+    URL.revokeObjectURL(url);
+  };
 
   return (
     <div className="flex h-full flex-col">
@@ -81,7 +121,10 @@ function PreviewInner() {
             {/* Title */}
             <div className="text-center">
               <h1 className="text-white font-display text-2xl">{title}</h1>
-              <p className="text-white/40 text-sm mt-1">{frames.length} 帧 · {videosDone} 个视频 · 总长 {frames.reduce((s, f) => s + (f.duration || 3), 0).toFixed(0)} 秒</p>
+              <p className="text-white/40 text-sm mt-1">{frames.length} 帧 · {videosDone} 个视频 · 总长 {totalDuration.toFixed(0)} 秒</p>
+              <Button variant="outline" size="sm" onClick={downloadHtml} className="mt-3 border-white/20 text-white hover:bg-white/10">
+                <Download className="size-3.5" /> 下载成片
+              </Button>
             </div>
 
             {/* Main viewer */}
@@ -150,10 +193,8 @@ function PreviewInner() {
               </div>
             </div>
 
-            {/* Export note */}
             <div className="text-center text-white/30 text-xs">
-              <Check className="size-3 inline mr-1" />
-              预览模式：每帧展示 3 秒。安装 ffmpeg 后可导出真实视频
+              下载为独立 HTML 文件，可在任何浏览器中播放
             </div>
           </div>
         )}
