@@ -270,3 +270,7 @@
 [ 1391739ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/api/storyboards:0
 [ 1391739ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/api/storyboards:0
 [ 1391739ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/api/series:0
+[ 1546781ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1546811ms] [LOG] [Fast Refresh] done in 91ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1551246ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1551316ms] [LOG] [Fast Refresh] done in 115ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431

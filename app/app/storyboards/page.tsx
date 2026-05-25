@@ -4,7 +4,7 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import {
-  Plus, Trash2, Sparkles, Loader2, GripVertical, Play, Camera, MessageSquare,
+  Clapperboard, Plus, Trash2, Sparkles, Loader2, Play, Camera,
   ChevronUp, ChevronDown, Eye,
 } from "lucide-react";
 import { toast } from "sonner";
@@ -130,10 +130,11 @@ export default function StoryboardsPage() {
 
   const generateAll = async () => {
     const idle = frames.filter(f => f.status !== "succeeded" && f.status !== "running");
-    for (const f of idle) {
-      await new Promise(r => setTimeout(r, 500));
-      generateFrame(f.id);
-    }
+    for (const f of idle) { await new Promise(r => setTimeout(r, 500)); generateFrame(f.id); }
+  };
+  const generateAllVideos = async () => {
+    const ready = frames.filter(f => f.status === "succeeded" && f.imageUrl);
+    for (const f of ready) { await new Promise(r => setTimeout(r, 500)); generateVideo(f.id); }
   };
 
   if (activeBoard) {
@@ -148,8 +149,11 @@ export default function StoryboardsPage() {
           />
           <div className="flex-1" />
           <Badge variant="muted">{frames.length} 帧</Badge>
-          <Button variant="outline" size="sm" onClick={generateAll} disabled={frames.every(f => f.status === "succeeded")}>
-            <Play className="size-3.5" /> 全部生成
+          <Button variant="outline" size="sm" onClick={generateAll} disabled={frames.length === 0 || frames.every(f => f.status !== "idle" && f.status !== "failed")}>
+            <Sparkles className="size-3.5" /> 全部生图
+          </Button>
+          <Button variant="outline" size="sm" onClick={generateAllVideos} disabled={!frames.some(f => f.status === "succeeded" && f.imageUrl)}>
+            <Play className="size-3.5" /> 全部生视频
           </Button>
           <Button variant="brand" size="sm" onClick={addFrame}>
             <Plus className="size-3.5" /> 添加帧
