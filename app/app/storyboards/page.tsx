@@ -161,7 +161,7 @@ export default function StoryboardsPage() {
         </header>
 
         <div className="flex-1 overflow-y-auto p-6">
-          <div className="mx-auto max-w-2xl space-y-4">
+          <div className="mx-auto max-w-full px-6 space-y-4">
             {frames.length === 0 ? (
               <div className="flex flex-col items-center justify-center py-20 text-muted-foreground">
                 <Camera className="size-10 mb-3" />
@@ -203,7 +203,7 @@ export default function StoryboardsPage() {
                   </div>
 
                   {/* Frame body: image + video + description */}
-                  <div className="grid grid-cols-[140px_140px_1fr] gap-4 p-4">
+                  <div className="grid grid-cols-[240px_240px_1fr] gap-4 p-4">
                     {/* Image */}
                     <div className="aspect-square rounded-lg bg-secondary overflow-hidden">
                       {frame.imageUrl ? (
