@@ -3818,3 +3818,17 @@ Import traces:
 [ 4343172ms] [LOG] [Fast Refresh] done in 250ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
 [ 4497318ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
 [ 4497395ms] [LOG] [Fast Refresh] done in 81ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 4631678ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 4631679ms] [LOG] [Fast Refresh] done in 102ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 4643257ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 4643380ms] [LOG] [Fast Refresh] done in 196ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 4649740ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 4649804ms] [LOG] [Fast Refresh] done in 165ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 4658626ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 4658633ms] [ERROR] The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [false, 6] [false, 3, [object Object],[object Object],[object Object],[object Object],[object Object],[object Object]] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:3272
+[ 4658643ms] [LOG] [Fast Refresh] done in 84ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 4667118ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 4667130ms] [LOG] [Fast Refresh] done in 85ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431

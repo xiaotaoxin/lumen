@@ -52,7 +52,7 @@ boards.post("/:id/frames", async (c) => {
 boards.patch("/:id/frames/:frameId", async (c) => {
   const body = await c.req.json().catch(() => ({})); const db = getSqlite();
   if (!db.prepare("SELECT id FROM storyboard_frames WHERE id = ?").get(c.req.param("frameId"))) return c.json({ code: "NOT_FOUND" }, 404);
-  const map: Record<string, string> = { shotDescription: "shot_description", shotSize: "shot_size", cameraAngle: "camera_angle", cameraMovement: "camera_movement", dialogue: "dialogue", speaker: "speaker", imagePrompt: "image_prompt", imageUrl: "image_url", status: "status" };
+  const map: Record<string, string> = { shotDescription: "shot_description", shotSize: "shot_size", cameraAngle: "camera_angle", cameraMovement: "camera_movement", dialogue: "dialogue", speaker: "speaker", imagePrompt: "image_prompt", imageUrl: "image_url", status: "status", duration: "duration" };
   const sets: string[] = ["updated_at = ?"]; const vals: unknown[] = [now()];
   for (const [k, col] of Object.entries(map)) { if (body[k] !== undefined) { sets.push(`${col} = ?`); vals.push(body[k]); } }
   if (body.orderIndex !== undefined) { sets.push("order_index = ?"); vals.push(body.orderIndex); }
@@ -120,6 +120,6 @@ async function mockGenerate(frameId: string, prompt: string, type: "image" | "vi
 }
 
 function sbRow(r: Record<string, unknown>) { return { id: r.id, userId: r.user_id, sessionId: r.session_id, title: r.title, analysisData: r.analysis_data ? JSON.parse(r.analysis_data as string) : null, createdAt: r.created_at, updatedAt: r.updated_at }; }
-function fRow(r: Record<string, unknown>) { return { id: r.id, storyboardId: r.storyboard_id, orderIndex: r.order_index, shotDescription: r.shot_description, shotSize: r.shot_size, cameraAngle: r.camera_angle, cameraMovement: r.camera_movement, dialogue: r.dialogue, speaker: r.speaker, imagePrompt: r.image_prompt, imageUrl: r.image_url, videoUrl: r.video_url, status: r.status, errorMessage: r.error_message, createdAt: r.created_at, updatedAt: r.updated_at }; }
+function fRow(r: Record<string, unknown>) { return { id: r.id, storyboardId: r.storyboard_id, orderIndex: r.order_index, shotDescription: r.shot_description, shotSize: r.shot_size, cameraAngle: r.camera_angle, cameraMovement: r.camera_movement, dialogue: r.dialogue, speaker: r.speaker, imagePrompt: r.image_prompt, imageUrl: r.image_url, videoUrl: r.video_url, duration: (r.duration as number) || 3, status: r.status, errorMessage: r.error_message, createdAt: r.created_at, updatedAt: r.updated_at }; }
 
 export default boards;

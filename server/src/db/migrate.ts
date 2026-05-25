@@ -171,6 +171,7 @@ export function runMigrations(): void {
       image_prompt      TEXT DEFAULT '',
       image_url         TEXT,
       video_url         TEXT,
+      duration          REAL DEFAULT 3,
       status            TEXT NOT NULL DEFAULT 'idle' CHECK (status IN ('idle', 'running', 'succeeded', 'failed')),
       error_message     TEXT,
       created_at        TEXT NOT NULL,

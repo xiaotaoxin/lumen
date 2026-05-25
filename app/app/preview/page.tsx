@@ -21,7 +21,7 @@ async function fetchJson<T>(path: string): Promise<T> {
 interface Frame {
   id: string; orderIndex: number; shotDescription: string;
   imageUrl?: string; videoUrl?: string; dialogue?: string; speaker?: string;
-  status: string;
+  duration: number; status: string;
 }
 
 export default function PreviewPage() {
@@ -47,18 +47,23 @@ function PreviewInner() {
       .finally(() => setLoading(false));
   }, [storyboardId]);
 
-  // Auto-play logic
+  // Auto-play with per-frame duration
   React.useEffect(() => {
     if (playing && frames.length > 0) {
-      timerRef.current = setInterval(() => {
+      const advance = () => {
         setCurrent(prev => {
           if (prev >= frames.length - 1) { setPlaying(false); return prev; }
-          return prev + 1;
+          const next = prev + 1;
+          const dur = (frames[next]?.duration || 3) * 1000;
+          timerRef.current = setTimeout(advance, dur);
+          return next;
         });
-      }, 3000);
+      };
+      const dur = (frames[current]?.duration || 3) * 1000;
+      timerRef.current = setTimeout(advance, dur);
     }
-    return () => { if (timerRef.current) clearInterval(timerRef.current); };
-  }, [playing, frames.length]);
+    return () => { if (timerRef.current) clearTimeout(timerRef.current); };
+  }, [playing, current, frames]);
 
   const currentFrame = frames[current];
   const videosDone = frames.filter(f => f.videoUrl).length;
@@ -76,7 +81,7 @@ function PreviewInner() {
             {/* Title */}
             <div className="text-center">
               <h1 className="text-white font-display text-2xl">{title}</h1>
-              <p className="text-white/40 text-sm mt-1">{frames.length} 帧 · {videosDone} 个视频 · 每帧 3 秒</p>
+              <p className="text-white/40 text-sm mt-1">{frames.length} 帧 · {videosDone} 个视频 · 总长 {frames.reduce((s, f) => s + (f.duration || 3), 0).toFixed(0)} 秒</p>
             </div>
 
             {/* Main viewer */}

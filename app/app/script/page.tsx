@@ -34,7 +34,7 @@ interface ShotItem { sceneName: string; shotSize: string; cameraAngle: string; c
 interface FrameItem {
   id: string; storyboardId: string; orderIndex: number; shotDescription: string; shotSize: string;
   cameraAngle: string; cameraMovement: string; dialogue: string; speaker: string;
-  imagePrompt: string; imageUrl?: string; videoUrl?: string; status: string; errorMessage?: string;
+  imagePrompt: string; imageUrl?: string; videoUrl?: string; duration: number; status: string; errorMessage?: string;
 }
 
 const EXAMPLE = `# 月光下的约定
@@ -338,6 +338,10 @@ export default function ScriptPage() {
                       <span className="text-xs text-muted-foreground font-medium">#{i + 1}</span>
                       <button onClick={() => moveFrame(frame.id, -1)} disabled={i === 0} className="text-muted-foreground hover:text-foreground disabled:opacity-30"><ChevronUp className="size-3" /></button>
                       <button onClick={() => moveFrame(frame.id, 1)} disabled={i === frames.length - 1} className="text-muted-foreground hover:text-foreground disabled:opacity-30"><ChevronDown className="size-3" /></button>
+                      <input type="number" min="1" max="30" step="0.5" value={frame.duration || 3}
+                        onChange={e => updateFrame(frame.id, { duration: parseFloat(e.target.value) || 3 })}
+                        className="w-10 text-center text-[11px] border rounded px-0.5 py-0 bg-transparent" title="帧时长(秒)" />
+                      <span className="text-[10px] text-muted-foreground">秒</span>
                       <select className="text-[11px] border rounded px-1 py-0.5 bg-transparent" value={frame.shotSize} onChange={e => updateFrame(frame.id, { shotSize: e.target.value })}>{SHOT_SIZES.map(s => <option key={s}>{s}</option>)}</select>
                       <select className="text-[11px] border rounded px-1 py-0.5 bg-transparent" value={frame.cameraAngle} onChange={e => updateFrame(frame.id, { cameraAngle: e.target.value })}>{CAMERA_ANGLES.map(s => <option key={s}>{s}</option>)}</select>
                       <select className="text-[11px] border rounded px-1 py-0.5 bg-transparent" value={frame.cameraMovement} onChange={e => updateFrame(frame.id, { cameraMovement: e.target.value })}>{CAMERA_MOVEMENTS.map(s => <option key={s}>{s}</option>)}</select>
