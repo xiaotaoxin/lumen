@@ -18,17 +18,17 @@ async function fetchJson(path: string) {
 }
 
 const STEPS = [
-  { key: "script", label: "剧本分析", icon: BookOpen, href: "/app/script",
+  { key: "script", label: "剧本分析", icon: BookOpen, href: "/app/script?step=script",
     check: async () => { const s = await fetchJson("/subjects") as Array<unknown>; return s.length >= 2; } },
-  { key: "subjects", label: "角色设定", icon: User, href: "/app/subjects",
+  { key: "subjects", label: "角色设定", icon: User, href: "/app/script?step=subjects",
     check: async () => { const s = await fetchJson("/subjects") as Array<unknown>; return s.length >= 3; } },
-  { key: "storyboard", label: "创建分镜", icon: Camera, href: "/app/storyboards",
+  { key: "storyboard", label: "创建分镜", icon: Camera, href: "/app/script?step=storyboard",
     check: async () => { const b = await fetchJson("/storyboards") as Array<unknown>; return b.length > 0; } },
-  { key: "frames", label: "生成分镜图", icon: Film, href: "/app/storyboards",
+  { key: "frames", label: "生成分镜图", icon: Film, href: "/app/script?step=frames",
     check: async () => { const b = await fetchJson("/storyboards") as Array<{ id: string; frameCount: number }>; return b.some(x => x.frameCount > 0); } },
-  { key: "video", label: "图生视频", icon: Clapperboard, href: "/app/storyboards",
+  { key: "video", label: "图生视频", icon: Clapperboard, href: "/app/script?step=video",
     check: async () => { const b = await fetchJson("/storyboards") as Array<{ id: string }>; if (!b.length) return false; const f = await fetchJson(`/storyboards/${b[0].id}`) as { frames?: Array<{ videoUrl?: string }> }; return f.frames?.some(x => x.videoUrl) || false; } },
-  { key: "series", label: "组成剧集", icon: BookOpen, href: "/app/series",
+  { key: "series", label: "组成剧集", icon: BookOpen, href: "/app/script?step=series",
     check: async () => { const s = await fetchJson("/series") as Array<{ episodeCount: number }>; return s.some(x => x.episodeCount > 0); } },
   { key: "export", label: "导出成片", icon: Download, href: "",
     check: async () => { const s = await fetchJson("/series") as Array<{ episodeCount: number }>; return s.some(x => x.episodeCount > 0); } },

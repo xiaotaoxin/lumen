@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import {
   Loader2, Sparkles, Upload, Check, ArrowRight, Play, Plus, Trash2,
@@ -51,7 +51,24 @@ type Phase = "input" | "analysis" | "generating" | "done";
 
 export default function ScriptPage() {
   const router = useRouter();
-  // Script input
+  const search = useSearchParams();
+  const stepParam = search.get("step");
+  // Refs for scrolling
+  const inputRef = React.useRef<HTMLDivElement>(null);
+  const analysisRef = React.useRef<HTMLDivElement>(null);
+  const framesRef = React.useRef<HTMLDivElement>(null);
+  const seriesRef = React.useRef<HTMLDivElement>(null);
+
+  React.useEffect(() => {
+    if (!stepParam) return;
+    const refMap: Record<string, React.RefObject<HTMLDivElement | null>> = {
+      script: inputRef, subjects: analysisRef, storyboard: framesRef,
+      frames: framesRef, video: framesRef, series: seriesRef,
+    };
+    const ref = refMap[stepParam];
+    // Delay to let page render first
+    if (ref) setTimeout(() => ref.current?.scrollIntoView({ behavior: "smooth", block: "start" }), 200);
+  }, [stepParam]);
   const [text, setText] = React.useState("");
   const [analyzing, setAnalyzing] = React.useState(false);
   // Analysis result
@@ -267,7 +284,7 @@ export default function ScriptPage() {
 
           {/* ── Phase: Input ── */}
           {(phase === "input" || phase === "analysis") && (
-            <section className="space-y-4">
+            <section ref={inputRef} className="space-y-4">
               <div className="flex gap-2 text-sm">
                 <button onClick={() => setText(EXAMPLE)} className="text-brand-500 hover:underline">试试示例剧本</button>
                 <label className="cursor-pointer text-muted-foreground hover:text-foreground">
@@ -290,7 +307,7 @@ export default function ScriptPage() {
 
           {/* ── Phase: Analysis ── */}
           {analysis && (
-            <motion.section initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="space-y-6">
+            <motion.section ref={analysisRef} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="space-y-6">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <button onClick={() => { setAnalysis(null); setApplied(false); setStoryboardId(null); setFrames([]); setPhase("input"); setSeriesId(null); }} className="text-xs text-muted-foreground hover:text-foreground">← 返回列表</button>
@@ -321,7 +338,7 @@ export default function ScriptPage() {
 
           {/* ── Phase: Storyboard Frames (after apply) ── */}
           {applied && storyboardId && (
-            <motion.section initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="space-y-4">
+            <motion.section ref={framesRef} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="space-y-4">
               <div className="flex items-center gap-3">
                 <h2 className="font-display text-xl">分镜镜头</h2>
                 <Badge variant="muted">{frames.length} 帧</Badge>
@@ -408,7 +425,7 @@ export default function ScriptPage() {
                 </div>
               )}
               {seriesId && (
-                <div className="rounded-xl border border-emerald-400/40 bg-emerald-500/5 p-6 space-y-3">
+                <div ref={seriesRef} className="rounded-xl border border-emerald-400/40 bg-emerald-500/5 p-6 space-y-3">
                   <div className="flex items-center gap-2">
                     <Check className="size-5 text-emerald-500" />
                     <span className="font-medium text-sm">成片预览</span>
