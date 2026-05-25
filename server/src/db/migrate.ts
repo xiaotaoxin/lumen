@@ -175,6 +175,28 @@ export function runMigrations(): void {
       updated_at        TEXT NOT NULL
     );
     CREATE INDEX IF NOT EXISTS idx_storyboard_frames_board ON storyboard_frames(storyboard_id);
+
+    CREATE TABLE IF NOT EXISTS series (
+      id          TEXT PRIMARY KEY,
+      user_id     TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+      title       TEXT NOT NULL DEFAULT '未命名剧集',
+      description TEXT DEFAULT '',
+      cover_url   TEXT,
+      created_at  TEXT NOT NULL,
+      updated_at  TEXT NOT NULL
+    );
+    CREATE INDEX IF NOT EXISTS idx_series_user ON series(user_id);
+
+    CREATE TABLE IF NOT EXISTS series_episodes (
+      id              TEXT PRIMARY KEY,
+      series_id       TEXT NOT NULL REFERENCES series(id) ON DELETE CASCADE,
+      session_id      TEXT REFERENCES chat_sessions(id) ON DELETE SET NULL,
+      storyboard_id   TEXT REFERENCES storyboards(id) ON DELETE SET NULL,
+      order_index     INTEGER NOT NULL DEFAULT 0,
+      title           TEXT NOT NULL DEFAULT '未命名集',
+      created_at      TEXT NOT NULL
+    );
+    CREATE INDEX IF NOT EXISTS idx_series_episodes_series ON series_episodes(series_id);
   `);
 
   // Run Drizzle Kit migrations if any

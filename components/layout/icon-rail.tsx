@@ -4,7 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import {
-  ImageIcon, Clapperboard, Film, FolderOpen, Frame, Sparkles, Users2, ShieldCheck, LogOut, Settings2, Wrench, Mic2,
+  BookOpen, Clapperboard, Film, FolderOpen, Frame, ImageIcon, Sparkles, Users2, ShieldCheck, LogOut, Settings2, Wrench, Mic2,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Logo } from "@/components/brand/logo";
@@ -34,6 +34,7 @@ const ITEMS: RailItem[] = [
   { key: "tools",       label: "工具",  icon: Wrench,       href: "/app/tools",          remember: true },
   { key: "library",     label: "作品",  icon: FolderOpen,   href: "/app/history" },
   { key: "storyboards", label: "分镜",  icon: Film,         href: "/app/storyboards" },
+  { key: "series",      label: "剧集",  icon: BookOpen,     href: "/app/series" },
   { key: "subjects",    label: "主体",  icon: Users2,       href: "/app/subjects" },
 ];
 

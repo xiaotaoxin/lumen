@@ -15,6 +15,7 @@ import proxyRoutes from "./routes/proxy";
 import llmRoutes from "./routes/llm";
 import charactersRoutes from "./routes/characters";
 import storyboardsRoutes from "./routes/storyboards";
+import seriesRoutes from "./routes/series";
 
 const app = new Hono();
 
@@ -54,6 +55,7 @@ app.route("/api/proxy", proxyRoutes);
 app.route("/api/llm", llmRoutes);
 app.route("/api/characters", charactersRoutes);
 app.route("/api/storyboards", storyboardsRoutes);
+app.route("/api/series", seriesRoutes);
 
 // Data migration from localStorage (open, idempotent)
 app.post("/api/migrate", async (c) => {
