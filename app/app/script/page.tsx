@@ -63,6 +63,35 @@ export default function ScriptPage() {
   // Series
   const [seriesId, setSeriesId] = React.useState<string | null>(null);
   const [previewUrl, setPreviewUrl] = React.useState<string | null>(null);
+  // Past boards
+  const [boards, setBoards] = React.useState<Array<{ id: string; title: string; frameCount: number; updatedAt: string }>>([]);
+  const [loadingBoards, setLoadingBoards] = React.useState(true);
+
+  React.useEffect(() => {
+    fetchJson<Array<{ id: string; title: string; frameCount: number; updatedAt: string }>>("/storyboards")
+      .then(setBoards).finally(() => setLoadingBoards(false));
+  }, []);
+
+  const loadBoard = async (boardId: string) => {
+    try {
+      const full = await fetchJson<{ id: string; title: string; frames: FrameItem[] }>(`/storyboards/${boardId}`);
+      setStoryboardId(full.id);
+      setFrames(full.frames || []);
+      setApplied(true);
+      setPhase("generating");
+      setAnalysis({ title: full.title, characters: [], scenes: [], props: [], shots: [] });
+      toast.success(`已加载：${full.title}`);
+    } catch { toast.error("加载失败"); }
+  };
+
+  const deleteBoard = async (boardId: string) => {
+    try {
+      await fetchJson(`/storyboards/${boardId}`, { method: "DELETE" });
+      setBoards(prev => prev.filter(b => b.id !== boardId));
+      if (storyboardId === boardId) { setStoryboardId(null); setFrames([]); setApplied(false); setPhase("input"); setAnalysis(null); }
+      toast.success("已删除");
+    } catch { toast.error("删除失败"); }
+  };
 
   // Load frames
   const loadFrames = React.useCallback(async () => {
@@ -184,6 +213,38 @@ export default function ScriptPage() {
             <p className="mt-2 text-sm text-muted-foreground">从剧本到成片，一站式完成</p>
           </div>
 
+          {/* ── Past boards list ── */}
+          {phase === "input" && !analysis && (
+            <section className="space-y-3">
+              <div className="flex items-center justify-between">
+                <h2 className="text-sm font-medium">之前的创作</h2>
+                <span className="text-xs text-muted-foreground">{boards.length} 个</span>
+              </div>
+              {loadingBoards ? (
+                <div className="space-y-2">{[1,2].map(i => <div key={i} className="h-16 animate-pulse rounded-xl bg-secondary" />)}</div>
+              ) : boards.length === 0 ? (
+                <div className="text-xs text-muted-foreground py-4">暂无，下面开始第一个</div>
+              ) : (
+                <div className="space-y-2">
+                  {boards.map(b => (
+                    <div key={b.id} className="flex items-center gap-4 rounded-xl border border-border bg-card px-4 py-3 group hover:border-brand-400/20 transition-colors">
+                      <button onClick={() => loadBoard(b.id)} className="flex-1 text-left">
+                        <div className="text-sm font-medium">{b.title}</div>
+                        <div className="text-[11px] text-muted-foreground mt-0.5">{b.frameCount} 帧 · {new Date(b.updatedAt).toLocaleDateString("zh-CN")}</div>
+                      </button>
+                      <button onClick={() => deleteBoard(b.id)} className="text-muted-foreground hover:text-destructive opacity-0 group-hover:opacity-100 transition-opacity">
+                        <Trash2 className="size-4" />
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              )}
+              <div className="border-t border-border pt-4">
+                <div className="text-sm font-medium mb-3">新建创作</div>
+              </div>
+            </section>
+          )}
+
           {/* ── Phase: Input ── */}
           {(phase === "input" || phase === "analysis") && (
             <section className="space-y-4">
@@ -211,7 +272,10 @@ export default function ScriptPage() {
           {analysis && (
             <motion.section initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="space-y-6">
               <div className="flex items-center justify-between">
-                <h2 className="font-display text-2xl">{analysis.title}</h2>
+                <div className="flex items-center gap-3">
+                  <button onClick={() => { setAnalysis(null); setApplied(false); setStoryboardId(null); setFrames([]); setPhase("input"); setSeriesId(null); }} className="text-xs text-muted-foreground hover:text-foreground">← 返回列表</button>
+                  <h2 className="font-display text-2xl">{analysis.title}</h2>
+                </div>
                 {!applied && (
                   <Button variant="brand" onClick={apply} disabled={applying}>
                     {applying ? <><Loader2 className="size-4 animate-spin" /> 创建中…</> : <><Sparkles className="size-4" /> 一键创建素材和分镜</>}
