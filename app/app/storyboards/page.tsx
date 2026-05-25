@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { toast } from "sonner";
 import { cn } from "@/lib/utils";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -32,6 +33,8 @@ export default function StoryboardsPage() {
   const [loading, setLoading] = React.useState(true);
   const [activeBoard, setActiveBoard] = React.useState<Storyboard | null>(null);
   const [frames, setFrames] = React.useState<StoryboardFrame[]>([]);
+  const [previewVideo, setPreviewVideo] = React.useState<string | null>(null);
+  const [previewImage, setPreviewImage] = React.useState<string | null>(null);
 
   const reloadBoards = React.useCallback(async () => {
     try { setBoards(await sbApi.list()); } catch { /* noop */ }
@@ -205,9 +208,12 @@ export default function StoryboardsPage() {
                   {/* Frame body: image + video + description */}
                   <div className="grid grid-cols-[240px_240px_1fr] gap-4 p-4">
                     {/* Image */}
-                    <div className="aspect-square rounded-lg bg-secondary overflow-hidden">
+                    <div
+                      className="group/img relative aspect-square rounded-lg bg-secondary overflow-hidden cursor-pointer"
+                      onClick={() => { if (frame.imageUrl) setPreviewImage(frame.imageUrl); }}
+                    >
                       {frame.imageUrl ? (
-                        <img src={frame.imageUrl} alt={`Shot ${i + 1}`} className="h-full w-full object-cover" />
+                        <img src={frame.imageUrl} alt={`Shot ${i + 1}`} className="h-full w-full object-cover group-hover/img:scale-105 transition-transform" />
                       ) : frame.status === "running" ? (
                         <div className="flex h-full items-center justify-center"><Loader2 className="size-6 animate-spin text-muted-foreground" /></div>
                       ) : frame.status === "failed" ? (
@@ -217,9 +223,17 @@ export default function StoryboardsPage() {
                       )}
                     </div>
                     {/* Video */}
-                    <div className="aspect-square rounded-lg bg-secondary overflow-hidden">
+                    <div
+                      className="group/video relative aspect-square rounded-lg bg-secondary overflow-hidden cursor-pointer"
+                      onClick={() => { if (frame.videoUrl) setPreviewVideo(frame.videoUrl); }}
+                    >
                       {frame.videoUrl ? (
-                        <img src={frame.videoUrl} alt={`Video ${i + 1}`} className="h-full w-full object-cover" />
+                        <>
+                          <img src={frame.videoUrl} alt={`Video ${i + 1}`} className="h-full w-full object-cover" />
+                          <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover/video:bg-black/30 transition-colors">
+                            <Play className="size-10 text-white opacity-0 group-hover/video:opacity-100 transition-opacity drop-shadow-lg" />
+                          </div>
+                        </>
                       ) : frame.status === "running" ? (
                         <div className="flex h-full items-center justify-center"><Loader2 className="size-6 animate-spin text-muted-foreground" /></div>
                       ) : (
@@ -256,6 +270,23 @@ export default function StoryboardsPage() {
             )}
           </div>
         </div>
+
+        {/* Image preview dialog */}
+        <Dialog open={!!previewImage} onOpenChange={() => setPreviewImage(null)}>
+          <DialogContent className="max-w-4xl p-1 bg-black/95">
+            {previewImage && (
+              <img src={previewImage} alt="Image preview" className="w-full rounded-lg" />
+            )}
+          </DialogContent>
+        </Dialog>
+        {/* Video preview dialog */}
+        <Dialog open={!!previewVideo} onOpenChange={() => setPreviewVideo(null)}>
+          <DialogContent className="max-w-4xl p-1 bg-black/95">
+            {previewVideo && (
+              <img src={previewVideo} alt="Video preview" className="w-full rounded-lg" />
+            )}
+          </DialogContent>
+        </Dialog>
       </div>
     );
   }
