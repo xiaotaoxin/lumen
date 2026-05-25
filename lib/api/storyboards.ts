@@ -12,6 +12,7 @@ export interface StoryboardFrame {
   speaker: string;
   imagePrompt: string;
   imageUrl?: string;
+  videoUrl?: string;
   status: "idle" | "running" | "succeeded" | "failed";
   errorMessage?: string;
   createdAt: string;

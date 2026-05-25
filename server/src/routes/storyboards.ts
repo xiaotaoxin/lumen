@@ -101,16 +101,25 @@ async function mockGenerate(frameId: string, prompt: string, type: "image" | "vi
   const delay = 1500 + Math.random() * 2000;
   await new Promise(r => setTimeout(r, delay));
   try {
-    const label = type === "video" ? "Video Frame" : "Storyboard Frame";
-    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024"><rect fill="#1a1a2e" width="1024" height="1024"/><rect fill="#16213e" x="80" y="80" width="864" height="864" rx="16"/><text fill="#e94560" font-family="sans-serif" font-size="28" x="512" y="480" text-anchor="middle">${label}</text><text fill="#888" font-family="sans-serif" font-size="14" x="512" y="520" text-anchor="middle">${prompt.slice(0, 50)}</text></svg>`;
-    const dataUrl = "data:image/svg+xml;base64," + Buffer.from(svg).toString("base64");
-    db.prepare("UPDATE storyboard_frames SET image_url = ?, status = 'succeeded', image_prompt = ?, updated_at = ? WHERE id = ?").run(dataUrl, prompt || "", now(), frameId);
+    if (type === "video") {
+      // Generate video mock — an animated SVG placeholder
+      const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="576"><rect fill="#0a0a1a" width="1024" height="576"/><rect fill="#1a1a3e" x="60" y="40" width="904" height="496" rx="12"/><text fill="#e94560" font-family="sans-serif" font-size="24" x="512" y="270" text-anchor="middle">▶ Video Frame</text><text fill="#888" font-size="13" x="512" y="310" text-anchor="middle">${prompt.slice(0, 45)}</text><circle fill="#e94560" cx="512" cy="240" r="28" opacity="0.6"/></svg>`;
+      const dataUrl = "data:image/svg+xml;base64," + Buffer.from(svg).toString("base64");
+      db.prepare("UPDATE storyboard_frames SET video_url = ?, status = 'succeeded', updated_at = ? WHERE id = ?")
+        .run(dataUrl, now(), frameId);
+    } else {
+      const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024"><rect fill="#1a1a2e" width="1024" height="1024"/><rect fill="#16213e" x="80" y="80" width="864" height="864" rx="16"/><text fill="#e94560" font-family="sans-serif" font-size="28" x="512" y="480" text-anchor="middle">Storyboard Frame</text><text fill="#888" font-family="sans-serif" font-size="14" x="512" y="520" text-anchor="middle">${prompt.slice(0, 50)}</text></svg>`;
+      const dataUrl = "data:image/svg+xml;base64," + Buffer.from(svg).toString("base64");
+      db.prepare("UPDATE storyboard_frames SET image_url = ?, status = 'succeeded', image_prompt = ?, updated_at = ? WHERE id = ?")
+        .run(dataUrl, prompt || "", now(), frameId);
+    }
   } catch (err) {
-    db.prepare("UPDATE storyboard_frames SET status = 'failed', error_message = ?, updated_at = ? WHERE id = ?").run((err as Error).message, now(), frameId);
+    db.prepare("UPDATE storyboard_frames SET status = 'failed', error_message = ?, updated_at = ? WHERE id = ?")
+      .run((err as Error).message, now(), frameId);
   }
 }
 
 function sbRow(r: Record<string, unknown>) { return { id: r.id, userId: r.user_id, sessionId: r.session_id, title: r.title, createdAt: r.created_at, updatedAt: r.updated_at }; }
-function fRow(r: Record<string, unknown>) { return { id: r.id, storyboardId: r.storyboard_id, orderIndex: r.order_index, shotDescription: r.shot_description, shotSize: r.shot_size, cameraAngle: r.camera_angle, cameraMovement: r.camera_movement, dialogue: r.dialogue, speaker: r.speaker, imagePrompt: r.image_prompt, imageUrl: r.image_url, status: r.status, errorMessage: r.error_message, createdAt: r.created_at, updatedAt: r.updated_at }; }
+function fRow(r: Record<string, unknown>) { return { id: r.id, storyboardId: r.storyboard_id, orderIndex: r.order_index, shotDescription: r.shot_description, shotSize: r.shot_size, cameraAngle: r.camera_angle, cameraMovement: r.camera_movement, dialogue: r.dialogue, speaker: r.speaker, imagePrompt: r.image_prompt, imageUrl: r.image_url, videoUrl: r.video_url, status: r.status, errorMessage: r.error_message, createdAt: r.created_at, updatedAt: r.updated_at }; }
 
 export default boards;

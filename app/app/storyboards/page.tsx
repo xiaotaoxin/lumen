@@ -202,8 +202,9 @@ export default function StoryboardsPage() {
                     <Button variant="ghost" size="icon-sm" onClick={() => deleteFrame(frame.id)}><Trash2 className="size-3.5 text-muted-foreground" /></Button>
                   </div>
 
-                  {/* Frame body: image + description */}
-                  <div className="grid grid-cols-[140px_1fr] gap-4 p-4">
+                  {/* Frame body: image + video + description */}
+                  <div className="grid grid-cols-[140px_140px_1fr] gap-4 p-4">
+                    {/* Image */}
                     <div className="aspect-square rounded-lg bg-secondary overflow-hidden">
                       {frame.imageUrl ? (
                         <img src={frame.imageUrl} alt={`Shot ${i + 1}`} className="h-full w-full object-cover" />
@@ -213,6 +214,18 @@ export default function StoryboardsPage() {
                         <div className="flex h-full items-center justify-center text-xs text-destructive text-center p-2">{frame.errorMessage || "生成失败"}</div>
                       ) : (
                         <div className="flex h-full items-center justify-center text-xs text-muted-foreground">点击 ✨ 生成</div>
+                      )}
+                    </div>
+                    {/* Video */}
+                    <div className="aspect-square rounded-lg bg-secondary overflow-hidden">
+                      {frame.videoUrl ? (
+                        <img src={frame.videoUrl} alt={`Video ${i + 1}`} className="h-full w-full object-cover" />
+                      ) : frame.status === "running" ? (
+                        <div className="flex h-full items-center justify-center"><Loader2 className="size-6 animate-spin text-muted-foreground" /></div>
+                      ) : (
+                        <div className="flex h-full items-center justify-center text-xs text-muted-foreground">
+                          {frame.imageUrl ? "点 ▶ 生成视频" : "先生成图片"}
+                        </div>
                       )}
                     </div>
                     <div className="space-y-2">
