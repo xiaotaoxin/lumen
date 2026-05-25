@@ -158,3 +158,17 @@ TypeError: Cannot convert undefined or null to object
 [  762917ms] [LOG] [Fast Refresh] done in 45ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
 [  762954ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
 [  762973ms] [LOG] [HMR] connected @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1075286ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1075351ms] [LOG] [Fast Refresh] done in 85ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1083164ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1083229ms] [LOG] [Fast Refresh] done in 91ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1085694ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1085760ms] [LOG] [Fast Refresh] done in 73ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1091172ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1091225ms] [LOG] [Fast Refresh] done in 69ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1099672ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1099731ms] [LOG] [Fast Refresh] done in 70ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1102968ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1103022ms] [LOG] [Fast Refresh] done in 68ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1113225ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1113281ms] [LOG] [Fast Refresh] done in 66ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431

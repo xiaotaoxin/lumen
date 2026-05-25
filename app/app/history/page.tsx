@@ -57,9 +57,16 @@ export default function HistoryPage() {
   };
 
   const rerun = (g: Generation) => {
-    if (g.kind === "image") router.push("/app/text-to-image");
-    else router.push("/app/image-to-video");
+    const base = g.kind === "image" ? "/app/text-to-image" : "/app/image-to-video";
+    const url = g.sessionId ? `${base}?s=${g.sessionId}` : base;
+    router.push(url);
     toast.message("已跳转，请在工作台中按需调整后重跑", { duration: 3500 });
+  };
+
+  const openCard = (g: Generation) => {
+    const base = g.kind === "image" ? "/app/text-to-image" : "/app/image-to-video";
+    const url = g.sessionId ? `${base}?s=${g.sessionId}` : base;
+    router.push(url);
   };
 
   return (
@@ -122,7 +129,7 @@ export default function HistoryPage() {
       ) : (
         <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
           {items.map((g) => (
-            <HistoryCard key={g.id} g={g} onFavorite={fav} onRemove={remove} onRerun={rerun} />
+            <HistoryCard key={g.id} g={g} onFavorite={fav} onRemove={remove} onRerun={rerun} onOpen={openCard} />
           ))}
         </div>
       )}
@@ -131,12 +138,13 @@ export default function HistoryPage() {
 }
 
 function HistoryCard({
-  g, onFavorite, onRemove, onRerun,
+  g, onFavorite, onRemove, onRerun, onOpen,
 }: {
   g: Generation;
   onFavorite: (g: Generation) => void;
   onRemove: (g: Generation) => void;
   onRerun: (g: Generation) => void;
+  onOpen: (g: Generation) => void;
 }) {
   const model = findModel(g.modelId);
   const failed = g.status === "failed";
@@ -151,7 +159,9 @@ function HistoryCard({
   const hasAnyCover = imageCover || videoCover || (videoSrc && !videoExpired);
 
   return (
-    <div className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-colors hover:border-brand-400/30">
+    <div
+      onClick={() => onOpen(g)}
+      className="group relative cursor-pointer overflow-hidden rounded-2xl border border-border bg-card transition-colors hover:border-brand-400/30">
       <div className="relative aspect-square overflow-hidden bg-secondary">
         {imageCover ? (
           <img src={imageCover} alt={g.prompt} className="h-full w-full object-cover transition-transform group-hover:scale-105" />
@@ -194,21 +204,21 @@ function HistoryCard({
         )}
         <div className="absolute inset-x-0 bottom-0 flex items-center justify-end gap-1 bg-gradient-to-t from-black/70 to-transparent p-2 opacity-0 transition-opacity group-hover:opacity-100">
           <button
-            onClick={() => onFavorite(g)}
+            onClick={(e) => { e.stopPropagation(); onFavorite(g); }}
             className="flex size-8 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-md hover:bg-white/20"
             title="收藏"
           >
             <Heart className={`size-4 ${g.favorite ? "fill-brand-300 text-brand-300" : ""}`} />
           </button>
           <button
-            onClick={() => onRerun(g)}
+            onClick={(e) => { e.stopPropagation(); onRerun(g); }}
             className="flex size-8 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-md hover:bg-white/20"
             title="再来一张"
           >
             <RefreshCw className="size-4" />
           </button>
           <button
-            onClick={() => onRemove(g)}
+            onClick={(e) => { e.stopPropagation(); onRemove(g); }}
             className="flex size-8 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-md hover:bg-white/20"
             title="删除"
           >
