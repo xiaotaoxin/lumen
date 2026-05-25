@@ -8,13 +8,51 @@
 
 ## 一、项目定位
 
-- **前端单仓 + Mock 后端** 的图像/视频/画布创作工作台
-- 演示阶段，**所有 API 调用走浏览器 mock**；真后端边界由 `lib/api/*` 隔离
-- 同步 README 看完整路由地图与功能列表
+- **前后端分离** 的 AI 创作工作台：从剧本到成片一站式
+- **前端**：Next.js 16 + React 19，端口 3007
+- **后端**：Hono + SQLite (better-sqlite3)，端口 3001，JWT 认证
+- **全部 mock 模式**：AI 调用返回占位图/视频，无需 API Key 即可跑通全流程
+- 侧栏按创作链路排列：**剧本→创作→视频→分镜→剧集** + 音频/画布/主体/作品/工具
+
+### 启动方式
+
+```bash
+# 后端（先启）
+npx tsx server/src/index.ts    # 端口 3001
+
+# 前端（后启）
+npx next dev --port 3007       # 端口 3007
+```
+
+### 当前 mock 状态
+
+| 功能 | 状态 |
+|------|------|
+| 剧本分析 | mock 直接返回示例数据 |
+| 分镜生图 | mock SVG 占位图 |
+| 分镜生视频 | mock SVG 占位图 |
+| 角色工作台生成 | mock SVG 占位图 |
+| LLM 润色提示词 | 需 API Key（欠费），否则不显示按钮 |
+| 真文生图/图生视频 | 需要百炼 API Key |
 
 ---
 
-## 二、技术栈版本（重要）
+## 二、创作流水线（7 步）
+
+```
+剧本分析 → 角色设定 → 创建分镜 → 生成分镜图 → 图生视频 → 组成剧集 → 导出成片
+  /app/script   ←←←  全部在这个页面完成，不跳转  →→→   预览播放 + 下载
+```
+
+- **入口**：侧栏「工作」(/app/script)，之前也叫「剧本」
+- 上传/粘贴剧本 → AI 分析拆分角色/场景/道具/分镜 → 一键创建素材和分镜
+- 分镜帧：图+视频双栏展示，支持逐帧/批量生成，点击缩略图放大预览
+- 每帧可调：景别/视角/运镜/对白/时长(秒)
+- **时长自动计算**：2秒 + 对白字数÷15 + 描述>60字加1秒
+- 生成视频后点「组成剧集」→ 自动跳 `/app/preview?sb=xxx` 预览播放 → 下载成片
+- 流水线进度条（`PipelineGuide`）顶部常驻，每步可点击跳回对应区块
+
+## 三、技术栈版本（重要）
 
 | 库 | 版本 | 注意事项 |
 | --- | --- | --- |
@@ -29,18 +67,18 @@
 ## 三、命令速查
 
 ```bash
-# 起 dev server
+# 起后端（必须先启）
 cd /d/lumen
-npx next dev --port 3007         # 端口 3000 通常被占；session 默认用 3007
+npx tsx server/src/index.ts        # 端口 3001
+
+# 起前端
+npx next dev --port 3007            # 端口 3007
 
 # 类型检查（无错才算改完）
 npx tsc --noEmit
 
-# Lint（warnings 可接受，errors 必须 0）
+# Lint
 npx eslint . --ext .ts,.tsx
-
-# 生产构建（在大改后跑一次更稳）
-npm run build
 ```
 
 **永远在每次实质修改后跑 `tsc --noEmit`** —— 这个项目类型推得很严，一处错容易牵连多处。
@@ -197,7 +235,32 @@ upstream.headers.forEach((value, key) => {
 - **修法**：HF Space 调用全搬到浏览器侧 (`lib/hf-direct.ts`)。浏览器走 Windows 网络栈，自动用上系统代理
 - 不能搬的（如腾讯云 TC3 签名）必须服务端做的，给用户清晰报错让其配 HTTPS_PROXY
 
-### 14. AIHorde 匿名 kudos 限制
+### 14. 后端必须先启动
+
+- 前端页面渲染依赖后端 API（`localhost:3001`）
+- 如果后端没启，前端页面空白，控制台满屏 fetch failed
+- **必须先 `npx tsx server/src/index.ts`，再 `npx next dev`**
+
+### 15. 前端热更新不总是生效
+
+- 改 `server/` 文件后必须重启后端（`tsx` 不带 watch）
+- 改前端文件 Next.js Fast Refresh 通常能自动更新，但不稳定
+- 遇到"改了代码但没生效"→ 重启对应服务
+
+### 16. next-intl 与 Next.js 16 不兼容
+
+- `useTranslations()` 在 Next.js 16 + React 19 中抛出异常
+- 异常会破坏 React 事件委托 → 全页面点击失效
+- **当前已回退**：`I18nProvider` 已移除，登录页恢复硬编码中文
+- 翻译文件保留在 `messages/{zh,en}.json`，等兼容后重新集成
+
+### 17. pipeline-guide API 调用
+
+- `PipelineGuide` 每 30 秒轮询多个 API 检查进度
+- 所有 fetch 用 try/catch 包裹，失败返回空数组
+- 不要在这个组件里加不存在的 API 端点（如 `/api/characters` 无 list 端点）
+
+### 18. AIHorde 匿名 kudos 限制
 - 匿名 apikey `0000000000` 严格限：`width × height ≤ 1024×1024` + `steps ≤ 50` + 不能用"贵采样器"（k_heun, dpmpp_sde, dpm_2*）
 - `hires_fix=true` 会让有效步数翻倍 → 触发 kudos 限制 → HTTP 403
 - **匿名安全配置**：1024×512 + 25 步 + k_dpmpp_2m + hires_fix=false
@@ -379,16 +442,106 @@ if (
 - `components/canvas/panorama-viewer.tsx`
 - `app/panorama-view/page.tsx` / `app/admin/outpaint/page.tsx`
 
-## 十五、当前未完成的大块工作
+## 十五、后端架构（Stage-3）
 
-- **更多真 provider** —— Stability / fal / ComfyUI / Generic-HTTP，按 §十 末尾的 3 步加
-- **真后端**（Auth.js + Prisma + OSS 直传）—— 方案已沉淀，未启动；stage-2 加密层已就位（详见 §十六）可直接迁
-- **跨标签页 / 跨刷新的进度保留** —— BroadcastChannel + 服务端 task_id 持久化
-- **inpaint / 涂抹编辑** —— 需要真模型，目前占位
+### 15.1 服务端 (`server/`)
+
+```
+server/src/
+  index.ts                  Hono 入口（端口 3001）
+  app.ts                    路由挂载（18 个路由模块）
+  db/
+    connection.ts            SQLite 单例（WAL 模式）
+    schema.ts                Drizzle schema 定义
+    migrate.ts               建表迁移（14 张表）
+  middleware/
+    auth.ts                  JWT 验证 + adminOnly
+  routes/
+    auth.ts                  登录/注册/me
+    sessions.ts              会话 CRUD
+    generations.ts           生成记录 CRUD
+    canvases.ts              画布文档 CRUD
+    subjects.ts              素材库 CRUD
+    director-stages.ts       3D 导演台 CRUD
+    admin.ts                 用户管理/审批/指标
+    models.ts                模型管理（AES-256-GCM 加密）
+    media.ts                 媒体处理配置
+    files.ts                 文件上传/访问
+    proxy.ts                 AI 厂商代理（通用）
+    llm.ts                   LLM 提示词润色
+    characters.ts            角色工作台生成
+    storyboards.ts           分镜 CRUD + 生图 + 生视频（mock）
+    series.ts                剧集 CRUD + 剧集管理
+    script.ts                剧本分析 + 一键创建
+  services/
+    llm.ts                   DashScope Qwen / OpenAI 适配器
+    migrate.ts               localStorage → DB 迁移
+  utils/
+    jwt.ts                   JWT 签发/验证
+```
+
+### 15.2 数据库表（14 张）
+
+| 表 | 用途 |
+|---|---|
+| users | 用户账号 |
+| registrations | 注册申请（审批制） |
+| chat_sessions | 创作会话 |
+| generations | 生成记录 |
+| subjects | 素材库（角色/场景/道具） |
+| canvases | 画布文档 |
+| director_stages | 3D 导演台 |
+| storyboards | 分镜板 |
+| storyboard_frames | 分镜帧（含 image_url/video_url/duration） |
+| series | 剧集 |
+| series_episodes | 剧集剧集 |
+| character_assets | 角色工作台资产 |
+| media_config / media_tasks | 媒体处理 |
+| models / cloned_voices | 模型管理 / 克隆音色（Stage-2 遗留） |
+
+### 15.3 前端 API 层 (`lib/api/`)
+
+所有模块通过 `lib/api/client.ts` 的 `api()` 函数统一调用后端。JWT token 存 localStorage `lumen:token`。
+
+| 模块 | 文件 |
+|------|------|
+| auth | auth.ts → /api/auth/* |
+| sessions | sessions.ts → /api/sessions/* |
+| history | history.ts → /api/generations/* |
+| canvases | canvases.ts → /api/canvases/*（双写过渡） |
+| subjects | subjects.ts → /api/subjects/*（双写过渡） |
+| director-stages | director-stages.ts → /api/director-stages/*（双写过渡） |
+| admin | admin.ts → /api/admin/* |
+| generate | generate.ts → adapter 模式 |
+| llm | llm.ts → /api/llm/polish |
+| characters | characters.ts → /api/characters/* |
+| storyboards | storyboards.ts → /api/storyboards/* |
+| client | client.ts → 通用 fetch 封装 |
+
+## 十六、新增功能文件速查
+
+| 功能 | 位置 |
+|------|------|
+| 流水线向导（进度条） | `components/workspace/pipeline-guide.tsx` |
+| 工作页（剧本→成片） | `app/app/script/page.tsx` |
+| 预览播放页 | `app/app/preview/page.tsx` |
+| 分镜编辑器（独立） | `app/app/storyboards/page.tsx` |
+| 剧集管理 | `app/app/series/page.tsx` |
+| 角色工作台 | `components/workspace/character-workbench.tsx` |
+| LLM 润色 | `server/src/services/llm.ts` + `server/src/routes/llm.ts` |
+| 动效定义 | `lib/animations.ts` |
+| 国际化消息 | `messages/zh.json` + `messages/en.json` |
+| 文件上传 | `server/src/routes/files.ts` |
+
+## 十七、当前未完成的大块工作
+
+- **接真 AI API** —— 百炼账号充费后改 mock 为真实调用（改 `server/src/routes/storyboards.ts` 和 `characters.ts` 的 mockGenerate）
+- **ffmpeg 视频拼接** —— 安装 ffmpeg 后替换预览页的 HTML 下载为真实 MP4 合并
+- **更多真 provider** —— Stability / fal / ComfyUI / Generic-HTTP
+- **i18n 重新集成** —— `next-intl` 与 Next.js 16 有兼容问题，当前已回退为硬编码中文，翻译文件保留在 `messages/`
+- **跨标签页进度保留** —— BroadcastChannel + 服务端 task_id 持久化
+- **inpaint / 涂抹编辑** —— 需要真模型
 - **撤销 / 重做** —— xyflow 自带删除选中，未做手动 undo stack
-- **全景管线**（如重做）—— 见 §十四 删除原因；重做需先解决 provider 稳定性
-
-详见 `docs/PRD.md`。
 
 ---
 

@@ -49,7 +49,11 @@ const CAMERA_MOVEMENTS = ["固定", "慢推", "横移", "跟拍"];
 
 type Phase = "input" | "analysis" | "generating" | "done";
 
-export default function ScriptPage() {
+export default function ScriptPageWrapper() {
+  return <React.Suspense fallback={<div className="flex h-full items-center justify-center"><Loader2 className="size-6 animate-spin" /></div>}><ScriptPage /></React.Suspense>;
+}
+
+function ScriptPage() {
   const router = useRouter();
   const search = useSearchParams();
   const stepParam = search.get("step");
