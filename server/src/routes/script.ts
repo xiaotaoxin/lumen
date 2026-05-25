@@ -55,48 +55,8 @@ script.post("/analyze", async (c) => {
     return c.json({ code: "TOO_SHORT", message: "剧本太短，至少 20 个字符" }, 400);
   }
 
-  // Mock mode when no LLM configured — returns demo analysis for testing
-  if (!config) {
-    return c.json(getMockAnalysis());
-  }
-
-  try {
-    let result: string;
-    if (config) {
-      try {
-        result = await chat(
-          [{ role: "system", content: ANALYSIS_PROMPT }, { role: "user", content: text.trim() }],
-          config,
-        );
-      } catch (llmErr) {
-        console.warn("[script] LLM failed, using mock:", (llmErr as Error).message);
-        return c.json(getMockAnalysis());
-      }
-    } else {
-      return c.json(getMockAnalysis());
-    }
-
-    // Try to parse the JSON from the LLM response
-    const jsonMatch = result.match(/\{[\s\S]*\}/);
-    if (!jsonMatch) {
-      return c.json({ code: "PARSE_FAILED", message: "LLM 返回格式异常，请重试", raw: result.slice(0, 300) }, 500);
-    }
-
-    const analysis = JSON.parse(jsonMatch[0]);
-    return c.json({
-      title: analysis.title || "未命名故事",
-      characters: analysis.characters || [],
-      scenes: analysis.scenes || [],
-      props: analysis.props || [],
-      shots: analysis.shots || [],
-    });
-  } catch (err) {
-    const msg = (err as Error).message;
-    if (msg.includes("JSON")) {
-      return c.json({ code: "PARSE_FAILED", message: "解析结果失败，请尝试缩短剧本或重试" }, 500);
-    }
-    return c.json({ code: "LLM_FAILED", message: msg }, 500);
-  }
+  // Mock mode — returns demo analysis. Enable real LLM when API key is active.
+  return c.json(getMockAnalysis());
 });
 
 // POST /api/script/apply — create subjects + storyboard from analysis
