@@ -81,22 +81,11 @@ function PreviewInner() {
 
             {/* Main viewer */}
             <div className="relative w-full aspect-video rounded-2xl overflow-hidden bg-zinc-900 border border-zinc-800">
-              {/* Crossfade between frames */}
-              {frames.map((f, i) => {
-                const isVisible = i === current;
-                const src = f.videoUrl || f.imageUrl;
-                if (!src && !isVisible) return null;
-                return (
-                  <img
-                    key={f.id}
-                    src={src}
-                    alt={`Frame ${i + 1}`}
-                    className="absolute inset-0 h-full w-full object-contain transition-opacity duration-500"
-                    style={{ opacity: isVisible ? 1 : 0, zIndex: isVisible ? 1 : 0 }}
-                  />
-                );
-              })}
-              {!currentFrame?.videoUrl && !currentFrame?.imageUrl && (
+              {currentFrame?.videoUrl ? (
+                <img src={currentFrame.videoUrl} className="absolute inset-0 h-full w-full object-contain" alt="" />
+              ) : currentFrame?.imageUrl ? (
+                <img src={currentFrame.imageUrl} className="absolute inset-0 h-full w-full object-contain" alt="" />
+              ) : (
                 <div className="absolute inset-0 flex items-center justify-center text-white/30 text-sm">帧 #{current + 1} 未生成</div>
               )}
 
