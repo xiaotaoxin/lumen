@@ -4,7 +4,7 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import {
-  Clapperboard, Plus, Trash2, Sparkles, Loader2, Play, Camera,
+  ArrowRight, Clapperboard, Plus, Trash2, Sparkles, Loader2, Play, Camera,
   ChevronUp, ChevronDown, Eye,
 } from "lucide-react";
 import { toast } from "sonner";
@@ -140,6 +140,9 @@ export default function StoryboardsPage() {
     for (const f of ready) { await new Promise(r => setTimeout(r, 500)); generateVideo(f.id); }
   };
 
+  const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+  const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+
   if (activeBoard) {
     return (
       <div className="flex h-full flex-col">
@@ -269,6 +272,36 @@ export default function StoryboardsPage() {
               ))
             )}
           </div>
+
+          {/* Next step banner — appears when all frames have videos */}
+          {allVideosDone && (
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="mx-6 mb-6 rounded-2xl border border-brand-400/30 bg-brand-500/5 p-5 flex items-center justify-between"
+            >
+              <div>
+                <div className="font-medium text-sm">全部分镜视频已生成</div>
+                <div className="text-xs text-muted-foreground mt-0.5">下一步：把分镜组成剧集，统一管理导出</div>
+              </div>
+              <Button variant="brand" onClick={() => router.push("/app/series")}>
+                组成剧集 <ArrowRight className="size-4" />
+              </Button>
+            </motion.div>
+          )}
+
+          {/* Also show when all images done but videos pending — prompt to generate videos */}
+          {allImagesDone && !allVideosDone && (
+            <div className="mx-6 mb-6 rounded-xl border border-border bg-card p-4 flex items-center justify-between">
+              <div>
+                <div className="font-medium text-sm">分镜图已全部生成</div>
+                <div className="text-xs text-muted-foreground mt-0.5">下一步：逐帧生成视频，或一键全部生成</div>
+              </div>
+              <Button variant="brand" size="sm" onClick={generateAllVideos}>
+                <Play className="size-3.5" /> 全部生视频
+              </Button>
+            </div>
+          )}
         </div>
 
         {/* Image preview dialog */}
