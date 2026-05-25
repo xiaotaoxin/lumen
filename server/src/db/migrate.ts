@@ -148,12 +148,13 @@ export function runMigrations(): void {
     CREATE INDEX IF NOT EXISTS idx_character_assets_subject ON character_assets(subject_id);
 
     CREATE TABLE IF NOT EXISTS storyboards (
-      id          TEXT PRIMARY KEY,
-      user_id     TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
-      session_id  TEXT REFERENCES chat_sessions(id) ON DELETE SET NULL,
-      title       TEXT NOT NULL DEFAULT '未命名分镜',
-      created_at  TEXT NOT NULL,
-      updated_at  TEXT NOT NULL
+      id            TEXT PRIMARY KEY,
+      user_id       TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+      session_id    TEXT REFERENCES chat_sessions(id) ON DELETE SET NULL,
+      title         TEXT NOT NULL DEFAULT '未命名分镜',
+      analysis_data TEXT,
+      created_at    TEXT NOT NULL,
+      updated_at    TEXT NOT NULL
     );
     CREATE INDEX IF NOT EXISTS idx_storyboards_user ON storyboards(user_id);
 

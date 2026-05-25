@@ -74,12 +74,18 @@ export default function ScriptPage() {
 
   const loadBoard = async (boardId: string) => {
     try {
-      const full = await fetchJson<{ id: string; title: string; frames: FrameItem[] }>(`/storyboards/${boardId}`);
+      const full = await fetchJson<{ id: string; title: string; analysisData: { characters: CharItem[]; scenes: SceneItem[]; props: { name: string; description: string; tags: string[] }[] } | null; frames: FrameItem[] }>(`/storyboards/${boardId}`);
       setStoryboardId(full.id);
       setFrames(full.frames || []);
       setApplied(true);
       setPhase("generating");
-      setAnalysis({ title: full.title, characters: [], scenes: [], props: [], shots: [] });
+      setAnalysis({
+        title: full.title,
+        characters: full.analysisData?.characters || [],
+        scenes: full.analysisData?.scenes || [],
+        props: full.analysisData?.props || [],
+        shots: [],
+      });
       toast.success(`已加载：${full.title}`);
     } catch { toast.error("加载失败"); }
   };

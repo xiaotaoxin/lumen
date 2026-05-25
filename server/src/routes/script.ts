@@ -101,8 +101,9 @@ script.post("/apply", async (c) => {
   // 2. Create storyboard from shots
   if (shots?.length) {
     const sbId = shortId("sb_");
-    db.prepare("INSERT INTO storyboards (id, user_id, title, created_at, updated_at) VALUES (?, ?, ?, ?, ?)")
-      .run(sbId, userId, title || "剧本分镜", now(), now());
+    const analysisData = JSON.stringify({ characters, scenes, props });
+    db.prepare("INSERT INTO storyboards (id, user_id, title, analysis_data, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?)")
+      .run(sbId, userId, title || "剧本分镜", analysisData, now(), now());
 
     shots.forEach((shot: Record<string, string>, i: number) => {
       const fId = shortId("sf_");

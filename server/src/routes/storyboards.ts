@@ -119,7 +119,7 @@ async function mockGenerate(frameId: string, prompt: string, type: "image" | "vi
   }
 }
 
-function sbRow(r: Record<string, unknown>) { return { id: r.id, userId: r.user_id, sessionId: r.session_id, title: r.title, createdAt: r.created_at, updatedAt: r.updated_at }; }
+function sbRow(r: Record<string, unknown>) { return { id: r.id, userId: r.user_id, sessionId: r.session_id, title: r.title, analysisData: r.analysis_data ? JSON.parse(r.analysis_data as string) : null, createdAt: r.created_at, updatedAt: r.updated_at }; }
 function fRow(r: Record<string, unknown>) { return { id: r.id, storyboardId: r.storyboard_id, orderIndex: r.order_index, shotDescription: r.shot_description, shotSize: r.shot_size, cameraAngle: r.camera_angle, cameraMovement: r.camera_movement, dialogue: r.dialogue, speaker: r.speaker, imagePrompt: r.image_prompt, imageUrl: r.image_url, videoUrl: r.video_url, status: r.status, errorMessage: r.error_message, createdAt: r.created_at, updatedAt: r.updated_at }; }
 
 export default boards;
