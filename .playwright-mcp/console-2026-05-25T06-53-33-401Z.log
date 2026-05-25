@@ -1,0 +1,1232 @@
+[     119ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[     185ms] [LOG] [Fast Refresh] done in 173ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[     243ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[     263ms] [LOG] [HMR] connected @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[   65024ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[   65226ms] [LOG] [Fast Refresh] done in 309ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[   65331ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[   65548ms] [LOG] [Fast Refresh] done in 320ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  151366ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  151447ms] [LOG] [Fast Refresh] done in 84ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  153174ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  153207ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3007/login?_rsc=1gzla:0
+[  153234ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3007/login:0
+[  153292ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3007/_next/static/chunks/node_modules_react-dom_0bruynb._.js:15305
+[  153340ms] Error: ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./app/layout.tsx:7:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at Object.getCompilationErrors (file://D:\lumen\node_modules\next\dist\server\dev\hot-reloader-turbopack.js:1186:59)
+    at DevBundlerService.getCompilationError (file://D:\lumen\node_modules\next\dist\server\lib\dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file://D:\lumen\node_modules\next\dist\server\dev\next-dev-server.js:719:42)
+    at DevServer.findPageComponents (file://D:\lumen\node_modules\next\dist\server\dev\next-dev-server.js:689:43)
+    at async DevServer.renderErrorToResponseImpl (file://D:\lumen\node_modules\next\dist\server\base-server.js:1745:26)
+[  153343ms] [LOG] [HMR] connected @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  153348ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  153349ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  153349ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  153349ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  153349ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  153349ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  153349ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  153349ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  153349ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  153349ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  153349ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  153359ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  153414ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  153476ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  153540ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  153602ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  153666ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  153729ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  153792ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  153855ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  153919ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  153982ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  154045ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  154107ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  154169ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  154231ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  154296ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  154358ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  154421ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  154486ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  154549ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  154613ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  154675ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  154739ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  154802ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  154863ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  154927ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  154990ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  155053ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  155115ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  155178ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  155240ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  155302ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  155364ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  155429ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  155493ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  155557ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  155620ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  155683ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  155748ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  155812ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  155876ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  155941ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  156004ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  156067ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  156129ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  156193ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  156257ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  156318ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  156382ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  156444ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  156506ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  156568ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  156630ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  156695ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  156757ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  156820ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  156883ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  156948ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  157012ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  157074ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  157136ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  157199ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  157262ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  157325ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  157388ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  157451ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  157514ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  157578ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  157642ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  157719ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  157783ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  157845ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  157907ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  157970ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  158035ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  158097ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  158159ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  158221ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  158277ms] [ERROR] ./app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/i18n-provider'
+   5 | import { SeedBootstrap } from "@/components/seed-bootstrap";
+   6 | import { Toaster } from "@/components/ui/sonner";
+>  7 | import { I18nProvider } from "@/components/i18n-provider";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const inter = Inter({
+  10 |   variable: "--font-inter",
+
+Import map: aliased to relative './components/i18n-provider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  158393ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  159638ms] [LOG] [Fast Refresh] done in 1359ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  159806ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  159821ms] [LOG] [Fast Refresh] done in 118ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  159868ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  159893ms] [LOG] [HMR] connected @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  181708ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  181772ms] [LOG] [Fast Refresh] done in 76ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  189212ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  189309ms] [LOG] [Fast Refresh] done in 130ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  204472ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  204539ms] [LOG] [Fast Refresh] done in 96ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  215675ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  215733ms] [LOG] [Fast Refresh] done in 37ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  225237ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  225294ms] [LOG] [Fast Refresh] done in 63ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  239942ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  240003ms] [LOG] [Fast Refresh] done in 58ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  241272ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  241408ms] [LOG] [Fast Refresh] done in 237ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  241508ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  241516ms] [LOG] [Fast Refresh] done in 108ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  276587ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  276649ms] [LOG] [Fast Refresh] done in 118ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431

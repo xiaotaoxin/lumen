@@ -1,16 +1,18 @@
 import * as React from "react";
+import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 function Card({ className, ...props }: React.ComponentProps<"div">) {
   return (
-    <div
+    <motion.div
       data-slot="card"
       className={cn(
         "rounded-2xl border border-border bg-card text-card-foreground",
         "shadow-[0_1px_0_0_color-mix(in_oklab,var(--foreground)_5%,transparent)_inset,0_8px_30px_-12px_color-mix(in_oklab,black_12%,transparent)]",
         className,
       )}
-      {...props}
+      whileHover={{ y: -2, transition: { duration: 0.2 } }}
+      {...(props as Record<string, unknown>)}
     />
   );
 }

@@ -1,3 +1,141 @@
 [     129ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
 [     150ms] [LOG] [HMR] connected @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
 [     348ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://www.chromium.org/developers/design-documents/create-amazing-password-forms) %o @ http://localhost:3007/admin/models:0
+[  798827ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  798938ms] [LOG] [Fast Refresh] done in 211ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  816844ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  816906ms] [LOG] [Fast Refresh] done in 169ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  838059ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  838137ms] [LOG] [Fast Refresh] done in 139ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  838240ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  838283ms] [LOG] [Fast Refresh] done in 145ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  846235ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  847837ms] [LOG] [Fast Refresh] done in 1578ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  847937ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  847960ms] [LOG] [HMR] connected @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  868451ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  868775ms] [LOG] [Fast Refresh] done in 383ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  868885ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  868909ms] [LOG] [Fast Refresh] done in 131ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  868967ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  868989ms] [LOG] [HMR] connected @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  898669ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  898771ms] [LOG] [Fast Refresh] done in 107ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  908559ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  908644ms] [LOG] [Fast Refresh] done in 138ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  908747ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  908756ms] [LOG] [Fast Refresh] done in 110ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  922114ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  922266ms] [LOG] [Fast Refresh] done in 159ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  926228ms] [ERROR] Failed to load resource: the server responded with a status of 502 (Bad Gateway) @ http://localhost:3007/api/voice/synthesize:0
+[  929400ms] [ERROR] Failed to load resource: the server responded with a status of 502 (Bad Gateway) @ http://localhost:3007/api/voice/synthesize:0
+[  977521ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/api/sessions:0
+[  977521ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/api/generations:0
+[  977522ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/api/sessions:0
+[  977522ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/api/generations:0
+[  977526ms] TypeError: Failed to fetch
+    at api (http://localhost:3007/_next/static/chunks/_05p371.._.js:176:23)
+    at Module.listMine (http://localhost:3007/_next/static/chunks/_05p371.._.js:591:143)
+    at ConversationSidebar.useEffect (http://localhost:3007/_next/static/chunks/_048uv4~._.js:1273:150)
+    at Object.react_stack_bottom_frame (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:15087:22)
+    at runWithFiberInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at commitHookEffectListMount (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:7255:167)
+    at commitHookPassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:7290:60)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8689:33)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8750:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8750:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8750:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8750:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8693:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8693:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8693:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8750:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8750:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+[  977527ms] TypeError: Failed to fetch
+    at api (http://localhost:3007/_next/static/chunks/_05p371.._.js:176:23)
+    at Module.listMine (http://localhost:3007/_next/static/chunks/_05p371.._.js:591:143)
+    at ConversationSidebar.useEffect (http://localhost:3007/_next/static/chunks/_048uv4~._.js:1273:150)
+    at Object.react_stack_bottom_frame (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:15087:22)
+    at runWithFiberInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at commitHookEffectListMount (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:7255:167)
+    at commitHookPassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:7290:60)
+    at reconnectPassiveEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8779:17)
+    at doubleInvokeEffectsOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10117:133)
+    at runWithFiberInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:79)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+    at recursivelyTraverseAndDoubleInvokeEffectsInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10110:147)
+[  977772ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/api/canvases/c_53e42b968c39b7e2:0
+[  978845ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/api/canvases/c_53e42b968c39b7e2:0
+[  979857ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/api/canvases/c_53e42b968c39b7e2:0
+[  979858ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/api/canvases/c_53e42b968c39b7e2:0

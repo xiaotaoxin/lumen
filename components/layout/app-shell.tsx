@@ -2,15 +2,15 @@
 
 import * as React from "react";
 import { usePathname } from "next/navigation";
+import { AnimatePresence, motion } from "framer-motion";
 import { IconRail } from "./icon-rail";
 import { ConversationSidebar } from "./conversation-sidebar";
+import { pageTransition } from "@/lib/animations";
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   const [collapsed, setCollapsed] = React.useState(false);
   const pathname = usePathname();
 
-  // 这些页面没有 session 概念（画布有自己的密集 rail；工具/作品/主体是列表型工作流），
-  // 隐藏会话侧栏，把宽度让出来。
   const hideConversationSidebar =
     pathname.startsWith("/app/canvas") ||
     pathname.startsWith("/app/tools") ||
@@ -23,7 +23,20 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       {!hideConversationSidebar && (
         <ConversationSidebar collapsed={collapsed} onToggle={() => setCollapsed((v) => !v)} />
       )}
-      <main className="flex-1 overflow-hidden bg-background">{children}</main>
+      <main className="flex-1 overflow-hidden bg-background">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={pathname}
+            variants={pageTransition}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            className="h-full"
+          >
+            {children}
+          </motion.div>
+        </AnimatePresence>
+      </main>
     </div>
   );
 }
