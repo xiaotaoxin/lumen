@@ -6,6 +6,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { toast } from "sonner";
 import { CenterComposer } from "@/components/workspace/center-composer";
 import { ImageResultGrid } from "@/components/workspace/image-result-grid";
+import { PipelineGuide } from "@/components/workspace/pipeline-guide";
 import { IMAGE_STYLES, findModel, useImageModels } from "@/lib/catalog";
 import { resolveImageSpec, snapImageParamsToSpec, defaultExtras } from "@/lib/providers/capabilities";
 import { useAuthStore } from "@/lib/store/auth-store";
@@ -431,6 +432,7 @@ function TextToImageInner() {
   // Conversation stream — list of generation cards above, composer pinned at bottom
   return (
     <div className="flex h-full flex-col">
+      <PipelineGuide />
       <div ref={scrollerRef} className="flex-1 overflow-y-auto">
         <div className="mx-auto max-w-3xl space-y-10 px-6 pb-10 pt-10">
           {stream.map((g) => (

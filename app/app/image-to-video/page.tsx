@@ -6,6 +6,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { toast } from "sonner";
 import { VideoComposer } from "@/components/workspace/video-composer";
 import { VideoResultCard } from "@/components/workspace/video-result-card";
+import { PipelineGuide } from "@/components/workspace/pipeline-guide";
 import { findModel, useVideoModels } from "@/lib/catalog";
 import { resolveVideoSpec, snapVideoParamsToSpec, defaultExtras } from "@/lib/providers/capabilities";
 import { useAuthStore } from "@/lib/store/auth-store";
@@ -432,6 +433,7 @@ function ImageToVideoInner() {
 
   return (
     <div className="flex h-full flex-col">
+      <PipelineGuide />
       <div ref={scrollerRef} className="flex-1 overflow-y-auto">
         <div className="mx-auto max-w-3xl space-y-10 px-6 pb-10 pt-10">
           {stream.map((g) => (
