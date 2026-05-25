@@ -95,7 +95,7 @@ function rowToAsset(row: Record<string, unknown>) {
   };
 }
 
-/** Mock async generation — replaces with real adapter call later. */
+/** Mock generation — simulate delay, return placeholder SVG. */
 async function generateCharacterAsset(
   assetId: string,
   subject: Record<string, unknown>,
@@ -103,65 +103,20 @@ async function generateCharacterAsset(
 ): Promise<void> {
   const db = getSqlite();
   const name = subject.name as string;
-  const description = (subject.description as string) || name;
+  const labelMap: Record<string, string> = { full_body: "Full Body", three_views: "Three Views", headshot: "Headshot" };
 
-  const promptMap: Record<string, string> = {
-    full_body: `Full body character design sheet of "${name}". ${description}. Standing pose, front view, full figure from head to toe. Clean background, professional character design style, high quality concept art.`,
-    three_views: `Three-view character turnaround sheet of "${name}". ${description}. Front view, side view, back view aligned horizontally. Professional character design reference, clean linework, neutral lighting.`,
-    headshot: `Portrait headshot of "${name}". ${description}. Shoulders up, detailed facial features, soft studio lighting, professional quality, expressive eyes.`,
-  };
-
+  const delay = 1500 + Math.random() * 2000;
+  await new Promise(r => setTimeout(r, delay));
   try {
-    // Call the image generation adapter
-    const { resolvePlaintextApiKey } = await import("../../../lib/server/models-store");
-
-    // Find a bailian model
-    const models = db
-      .prepare("SELECT id, provider_model_id FROM models WHERE provider_type LIKE 'bailian%' AND enabled = 1 AND api_key_encrypted IS NOT NULL LIMIT 1")
-      .all() as Array<Record<string, unknown>>;
-    if (!models.length) throw new Error("No bailian model configured");
-
-    const apiKey = resolvePlaintextApiKey(models[0].id as string);
-    if (!apiKey) throw new Error("No API key found");
-
-    const prompt = promptMap[kind] || promptMap.full_body;
-    const res = await fetch("https://dashscope.aliyuncs.com/api/v1/services/aigc/multimodal-generation/generation", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${apiKey}`,
-      },
-      body: JSON.stringify({
-        model: (models[0].provider_model_id as string) || "wan2.7-image-pro",
-        input: {
-          messages: [
-            { role: "user", content: [{ text: prompt }] },
-          ],
-        },
-        parameters: { size: "1024*1024", n: 1 },
-      }),
-    });
-
-    if (!res.ok) throw new Error(`Upstream returned ${res.status}`);
-
-    const data = await res.json() as {
-      output?: { choices?: Array<{ message?: { content?: Array<{ image?: string }> } }> };
-    };
-
-    const imageUrl = data.output?.choices?.[0]?.message?.content?.find(
-      (c: Record<string, unknown>) => typeof c.image === "string",
-    )?.image;
-
-    if (imageUrl) {
-      db.prepare("UPDATE character_assets SET image_url = ?, status = 'succeeded', prompt_used = ?, updated_at = ? WHERE id = ?")
-        .run(imageUrl, prompt, now(), assetId);
-    } else {
-      throw new Error("No image in response");
-    }
+    const label = labelMap[kind] || "Character";
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024"><rect fill="#1a1a2e" width="1024" height="1024"/><rect fill="#16213e" x="80" y="80" width="864" height="864" rx="16"/><text fill="#e94560" font-family="sans-serif" font-size="32" x="512" y="460" text-anchor="middle">${label}</text><text fill="#ccc" font-family="sans-serif" font-size="20" x="512" y="500" text-anchor="middle">${name}</text><text fill="#888" font-size="14" x="512" y="530" text-anchor="middle">${kind}</text></svg>`;
+    const dataUrl = "data:image/svg+xml;base64," + Buffer.from(svg).toString("base64");
+    const prompt = `${label} of ${name}`;
+    db.prepare("UPDATE character_assets SET image_url = ?, status = 'succeeded', prompt_used = ?, updated_at = ? WHERE id = ?")
+      .run(dataUrl, prompt, now(), assetId);
   } catch (err) {
-    const msg = (err as Error).message;
     db.prepare("UPDATE character_assets SET status = 'failed', error_message = ?, updated_at = ? WHERE id = ?")
-      .run(msg, now(), assetId);
+      .run((err as Error).message, now(), assetId);
   }
 }
 
