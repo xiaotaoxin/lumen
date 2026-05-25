@@ -199,13 +199,13 @@ export default function ScriptPage() {
     for (const f of ready) { await new Promise(r => setTimeout(r, 500)); generateVideo(f.id); }
   };
 
-  // Create series and show preview inline
+  // Create series and navigate to preview
   const createSeries = async () => {
     try {
       const s = await fetchJson<{ id: string }>("/series", { method: "POST", body: JSON.stringify({ title: analysis?.title || "未命名剧集" }) });
       await fetchJson(`/series/${s.id}/episodes`, { method: "POST", body: JSON.stringify({ storyboardId, title: analysis?.title || "第1集" }) });
       setSeriesId(s.id);
-      toast.success("剧集已创建！下方可预览成片");
+      router.push(`/app/preview?sb=${storyboardId}&title=${encodeURIComponent(analysis?.title || "")}`);
     } catch (e) { toast.error((e as Error).message); }
   };
 
