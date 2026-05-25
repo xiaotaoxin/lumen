@@ -365,3 +365,80 @@ For more information, see https://radix-ui.com/primitives/docs/components/dialog
 [ 2695138ms] [LOG] [Fast Refresh] done in 213ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
 [ 2695189ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
 [ 2695205ms] [LOG] [HMR] connected @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2905720ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2905905ms] [LOG] [Fast Refresh] done in 289ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2906006ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2906014ms] [LOG] [Fast Refresh] done in 108ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2912648ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2912719ms] [LOG] [Fast Refresh] done in 170ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2942384ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2942601ms] [LOG] [Fast Refresh] done in 316ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2942722ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2942758ms] [LOG] [Fast Refresh] done in 152ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2955183ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2955239ms] [LOG] [Fast Refresh] done in 95ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2966490ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2966494ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2966651ms] [LOG] [Fast Refresh] done in 92ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2966718ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2966735ms] [LOG] [HMR] connected @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2966773ms] ReferenceError: Wand is not defined
+    at module evaluation (http://localhost:3007/_next/static/chunks/_048uv4~._.js:810:15)
+    at http://localhost:3007/_next/static/chunks/turbopack-_0p44nws._.js:1307:27
+    at runModuleExecutionHooks (http://localhost:3007/_next/static/chunks/turbopack-_0p44nws._.js:1636:13)
+    at instantiateModuleShared (http://localhost:3007/_next/static/chunks/turbopack-_0p44nws._.js:1305:9)
+    at instantiateModule (http://localhost:3007/_next/static/chunks/turbopack-_0p44nws._.js:1621:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3007/_next/static/chunks/turbopack-_0p44nws._.js:1604:12)
+    at DevContext.esmImport [as i] (http://localhost:3007/_next/static/chunks/turbopack-_0p44nws._.js:278:20)
+    at module evaluation (http://localhost:3007/_next/static/chunks/_048uv4~._.js:1670:166)
+    at http://localhost:3007/_next/static/chunks/turbopack-_0p44nws._.js:1307:27
+    at runModuleExecutionHooks (http://localhost:3007/_next/static/chunks/turbopack-_0p44nws._.js:1636:13)
+    at instantiateModuleShared (http://localhost:3007/_next/static/chunks/turbopack-_0p44nws._.js:1305:9)
+    at instantiateModule (http://localhost:3007/_next/static/chunks/turbopack-_0p44nws._.js:1621:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3007/_next/static/chunks/turbopack-_0p44nws._.js:1604:12)
+    at DevContext.commonJsRequire [as r] (http://localhost:3007/_next/static/chunks/turbopack-_0p44nws._.js:299:12)
+    at requireModule (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_0p3wegg._.js:95:84)
+    at initializeModuleChunk (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_0p3wegg._.js:1110:25)
+    at readChunk (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_0p3wegg._.js:846:17)
+    at Object.react_stack_bottom_frame (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:15101:20)
+    at resolveLazy (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3866:20)
+    at reconcileChildFibersImpl (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:4191:234)
+    at reconcileChildFibersImpl (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:4234:132)
+    at http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:4261:39
+    at reconcileChildren (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:5898:119)
+    at updateFunctionComponent (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6086:9)
+    at beginWork (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6691:24)
+    at runWithFiberInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopSync (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9449:40)
+    at renderRootSync (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9433:13)
+    at performWorkOnRoot (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:186)
+    at performSyncWorkOnRoot (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10263:9)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10179:316)
+    at processRootScheduleInMicrotask (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10200:106)
+    at http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10274:158
+[ 2966845ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2966846ms] [LOG] [Fast Refresh] done in 104ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2980103ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2980475ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2980757ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2980759ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2980760ms] [LOG] [Fast Refresh] done in 766ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2980880ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2980907ms] [LOG] [Fast Refresh] done in 138ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2980971ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2980988ms] [LOG] [HMR] connected @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
