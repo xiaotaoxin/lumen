@@ -4,7 +4,6 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { SeedBootstrap } from "@/components/seed-bootstrap";
 import { Toaster } from "@/components/ui/sonner";
-import { I18nProvider } from "@/components/i18n-provider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -49,11 +48,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange={false}
         >
-          <I18nProvider>
-            <SeedBootstrap />
-            {children}
-            <Toaster />
-          </I18nProvider>
+          <SeedBootstrap />
+          {children}
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>

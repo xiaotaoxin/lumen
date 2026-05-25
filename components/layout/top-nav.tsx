@@ -6,7 +6,6 @@ import { LogOut, ShieldCheck, User2 } from "lucide-react";
 import { Logo } from "@/components/brand/logo";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
-import { LocaleSwitcher } from "@/components/locale-switcher";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -40,7 +39,6 @@ export function TopNav({ variant = "app" }: { variant?: "marketing" | "app" }) {
         )}
 
         <div className="ml-auto flex items-center gap-2">
-          <LocaleSwitcher />
           <ThemeToggle />
           {!user ? (
             <>
