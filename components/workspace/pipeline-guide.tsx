@@ -30,8 +30,8 @@ const STEPS = [
     check: async () => { const b = await fetchJson("/storyboards") as Array<{ id: string }>; if (!b.length) return false; const f = await fetchJson(`/storyboards/${b[0].id}`) as { frames?: Array<{ videoUrl?: string }> }; return f.frames?.some(x => x.videoUrl) || false; } },
   { key: "series", label: "组成剧集", icon: BookOpen, href: "/app/series",
     check: async () => { const s = await fetchJson("/series") as Array<{ episodeCount: number }>; return s.some(x => x.episodeCount > 0); } },
-  { key: "export", label: "导出成片", icon: Download, href: "/app/series",
-    check: async () => false },
+  { key: "export", label: "导出成片", icon: Download, href: "",
+    check: async () => { const s = await fetchJson("/series") as Array<{ episodeCount: number }>; return s.some(x => x.episodeCount > 0); } },
 ];
 
 export function PipelineGuide() {
@@ -84,9 +84,10 @@ export function PipelineGuide() {
                   initial={{ opacity: 0, y: -4 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.06 }}
-                  onClick={() => router.push(step.href)}
+                  onClick={() => step.href && router.push(step.href)}
                   className={cn(
-                    "flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] font-medium whitespace-nowrap cursor-pointer transition-colors",
+                    "flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] font-medium whitespace-nowrap transition-colors",
+                    step.href ? "cursor-pointer" : "",
                     isDone && "bg-brand-500/10 text-brand-600 hover:bg-brand-500/20",
                     isCurrent && "bg-brand-500 text-white shadow-sm hover:brightness-110",
                     !isDone && !isCurrent && "text-muted-foreground hover:bg-secondary",
