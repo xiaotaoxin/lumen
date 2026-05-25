@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { Check, BookOpen, Camera, Clapperboard, Download, Film, Sparkles, User } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -16,31 +17,32 @@ async function fetchJson(path: string) {
   } catch { return []; }
 }
 
-const STEP_DEFS = [
-  { key: "script", label: "剧本分析", icon: BookOpen,
+const STEPS = [
+  { key: "script", label: "剧本分析", icon: BookOpen, href: "/app/script",
     check: async () => { const s = await fetchJson("/subjects") as Array<unknown>; return s.length >= 2; } },
-  { key: "subjects", label: "角色设定", icon: User,
+  { key: "subjects", label: "角色设定", icon: User, href: "/app/subjects",
     check: async () => { const s = await fetchJson("/subjects") as Array<unknown>; return s.length >= 3; } },
-  { key: "storyboard", label: "创建分镜", icon: Camera,
+  { key: "storyboard", label: "创建分镜", icon: Camera, href: "/app/script",
     check: async () => { const b = await fetchJson("/storyboards") as Array<unknown>; return b.length > 0; } },
-  { key: "frames", label: "生成分镜图", icon: Film,
+  { key: "frames", label: "生成分镜图", icon: Film, href: "/app/script",
     check: async () => { const b = await fetchJson("/storyboards") as Array<{ id: string; frameCount: number }>; return b.some(x => x.frameCount > 0); } },
-  { key: "video", label: "图生视频", icon: Clapperboard,
+  { key: "video", label: "图生视频", icon: Clapperboard, href: "/app/script",
     check: async () => { const b = await fetchJson("/storyboards") as Array<{ id: string }>; if (!b.length) return false; const f = await fetchJson(`/storyboards/${b[0].id}`) as { frames?: Array<{ videoUrl?: string }> }; return f.frames?.some(x => x.videoUrl) || false; } },
-  { key: "series", label: "组成剧集", icon: BookOpen,
+  { key: "series", label: "组成剧集", icon: BookOpen, href: "/app/script",
     check: async () => { const s = await fetchJson("/series") as Array<{ episodeCount: number }>; return s.some(x => x.episodeCount > 0); } },
-  { key: "export", label: "导出成片", icon: Download,
+  { key: "export", label: "导出成片", icon: Download, href: "/app/script",
     check: async () => false },
 ];
 
 export function PipelineGuide() {
-  const [steps, setSteps] = React.useState<Array<typeof STEP_DEFS[number] & { done: boolean }>>([]);
+  const router = useRouter();
+  const [steps, setSteps] = React.useState<Array<typeof STEPS[number] & { done: boolean }>>([]);
   const [collapsed, setCollapsed] = React.useState(false);
 
   React.useEffect(() => {
     let cancelled = false;
     async function load() {
-      const results = await Promise.all(STEP_DEFS.map(async d => ({ ...d, done: await d.check() })));
+      const results = await Promise.all(STEPS.map(async d => ({ ...d, done: await d.check() })));
       if (!cancelled) setSteps(results);
     }
     load();
@@ -78,20 +80,21 @@ export function PipelineGuide() {
             const isLast = i === steps.length - 1;
             return (
               <React.Fragment key={step.key}>
-                <motion.div
+                <motion.button
                   initial={{ opacity: 0, y: -4 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.06 }}
+                  onClick={() => router.push(step.href)}
                   className={cn(
-                    "flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] font-medium whitespace-nowrap",
-                    isDone && "bg-brand-500/10 text-brand-600",
-                    isCurrent && "bg-brand-500 text-white shadow-sm",
-                    !isDone && !isCurrent && "text-muted-foreground",
+                    "flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] font-medium whitespace-nowrap cursor-pointer transition-colors",
+                    isDone && "bg-brand-500/10 text-brand-600 hover:bg-brand-500/20",
+                    isCurrent && "bg-brand-500 text-white shadow-sm hover:brightness-110",
+                    !isDone && !isCurrent && "text-muted-foreground hover:bg-secondary",
                   )}
                 >
                   {isDone ? <Check className="size-3" /> : <step.icon className="size-3" />}
                   <span className="hidden sm:inline">{step.label}</span>
-                </motion.div>
+                </motion.button>
                 {!isLast && <div className={cn("h-px w-3 sm:w-4", isDone ? "bg-brand-500/40" : "bg-border")} />}
               </React.Fragment>
             );

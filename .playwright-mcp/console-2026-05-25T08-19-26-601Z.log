@@ -3928,3 +3928,66 @@ Incoming: %s useEffect [false, 6] [false, 3, [object Object],[object Object],[ob
 [ 5213462ms] [LOG] [Fast Refresh] done in 102ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
 [ 5244730ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
 [ 5244747ms] [LOG] [Fast Refresh] done in 86ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5349516ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5349608ms] [LOG] [Fast Refresh] done in 172ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5356155ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5356164ms] ReferenceError: STEP_DEFS is not defined
+    at load (http://localhost:3007/_next/static/chunks/_0qk--b6._.js?id=%255Bproject%255D%252Fcomponents%252Fworkspace%252Fpipeline-guide.tsx+%255Bapp-client%255D+%2528ecmascript%2529:124:51)
+    at PipelineGuide.useEffect (http://localhost:3007/_next/static/chunks/_0qk--b6._.js?id=%255Bproject%255D%252Fcomponents%252Fworkspace%252Fpipeline-guide.tsx+%255Bapp-client%255D+%2528ecmascript%2529:132:13)
+    at Object.react_stack_bottom_frame (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:15087:22)
+    at runWithFiberInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at commitHookEffectListMount (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:7255:167)
+    at commitHookPassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:7290:60)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8689:33)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8750:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8738:783)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8730:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8750:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8750:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8693:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8693:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8750:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8750:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+[ 5356253ms] [LOG] [Fast Refresh] done in 184ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5368839ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5368930ms] [LOG] [Fast Refresh] done in 175ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5374667ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5374761ms] [LOG] [Fast Refresh] done in 154ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5374863ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5374878ms] [LOG] [Fast Refresh] done in 115ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5386170ms] ReferenceError: STEP_DEFS is not defined
+    at load (http://localhost:3007/_next/static/chunks/_0qk--b6._.js?id=%255Bproject%255D%252Fcomponents%252Fworkspace%252Fpipeline-guide.tsx+%255Bapp-client%255D+%2528ecmascript%2529:124:51)
