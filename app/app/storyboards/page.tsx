@@ -209,7 +209,7 @@ export default function StoryboardsPage() {
                   </div>
 
                   {/* Frame body: image + video + description */}
-                  <div className="grid grid-cols-[240px_240px_1fr] gap-4 p-4">
+                  <div className="grid grid-cols-[240px_320px_1fr] gap-4 p-4">
                     {/* Image */}
                     <div
                       className="group/img relative aspect-square rounded-lg bg-secondary overflow-hidden cursor-pointer"
@@ -227,7 +227,7 @@ export default function StoryboardsPage() {
                     </div>
                     {/* Video */}
                     <div
-                      className="group/video relative aspect-square rounded-lg bg-secondary overflow-hidden cursor-pointer"
+                      className="relative aspect-video rounded-lg bg-secondary overflow-hidden cursor-pointer group/video"
                       onClick={() => { if (frame.videoUrl) setPreviewVideo(frame.videoUrl); }}
                     >
                       {frame.videoUrl ? (

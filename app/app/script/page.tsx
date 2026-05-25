@@ -340,7 +340,7 @@ export default function ScriptPage() {
                       )}
                       <Button variant="ghost" size="icon-sm" onClick={() => deleteFrame(frame.id)}><Trash2 className="size-3.5 text-muted-foreground" /></Button>
                     </div>
-                    <div className="grid grid-cols-[200px_200px_1fr] gap-3 p-3">
+                    <div className="grid grid-cols-[220px_280px_1fr] gap-3 p-3">
                       {/* Image */}
                       <div className="aspect-square rounded-lg bg-secondary overflow-hidden cursor-pointer" onClick={() => frame.imageUrl && setPreviewUrl(frame.imageUrl)}>
                         {frame.imageUrl ? <img src={frame.imageUrl} className="h-full w-full object-cover" /> :
@@ -348,7 +348,7 @@ export default function ScriptPage() {
                           <div className="flex h-full items-center justify-center text-xs text-muted-foreground">待生成</div>}
                       </div>
                       {/* Video */}
-                      <div className="aspect-square rounded-lg bg-secondary overflow-hidden cursor-pointer group/v" onClick={() => frame.videoUrl && setPreviewUrl(frame.videoUrl)}>
+                      <div className="relative aspect-video rounded-lg bg-secondary overflow-hidden cursor-pointer group/v" onClick={() => frame.videoUrl && setPreviewUrl(frame.videoUrl)}>
                         {frame.videoUrl ? (
                           <>
                             <img src={frame.videoUrl} className="h-full w-full object-cover" />
