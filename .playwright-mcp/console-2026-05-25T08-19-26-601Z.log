@@ -3840,3 +3840,87 @@ Incoming: %s useEffect [false, 6] [false, 3, [object Object],[object Object],[ob
 [ 4934889ms] [LOG] [Fast Refresh] done in 170ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
 [ 4940543ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
 [ 4940557ms] [LOG] [Fast Refresh] done in 87ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5019985ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5020008ms] [LOG] [HMR] connected @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5087041ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5087104ms] [LOG] [Fast Refresh] done in 83ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5087124ms] ReferenceError: downloadHtml is not defined
+    at PreviewInner (http://localhost:3007/_next/static/chunks/_0qk--b6._.js?id=%255Bproject%255D%252Fapp%252Fapp%252Fpreview%252Fpage.tsx+%255Bapp-client%255D+%2528ecmascript%2529:237:46)
+    at Object.react_stack_bottom_frame (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:15037:24)
+    at renderWithHooks (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:4620:24)
+    at updateFunctionComponent (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6081:21)
+    at beginWork (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6691:24)
+    at runWithFiberInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopSync (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9449:40)
+    at renderRootSync (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9433:13)
+    at performWorkOnRoot (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:186)
+    at performSyncWorkOnRoot (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10263:9)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10179:316)
+    at processRootScheduleInMicrotask (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10200:106)
+    at http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10274:158
+[ 5089466ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5089469ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5089472ms] [ERROR] Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template). @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:3272
+[ 5089512ms] [LOG] [Fast Refresh] done in 85ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5089622ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5089641ms] [LOG] [Fast Refresh] done in 129ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5089650ms] [WARNING] [boot] 拉取服务端模型失败： TypeError: Failed to fetch
+    at fetchList (http://localhost:3007/_next/static/chunks/_05p371.._.js:5537:23)
+    at refreshCache (http://localhost:3007/_next/static/chunks/_05p371.._.js:5563:12)
+    at SeedBootstrap.useEffect (http://localhost:3007/_next/static/chunks/_05p371.._.js:6185:180)
+    at SeedBootstrap.useEffect (http://localhost:3007/_next/static/chunks/_05p371.._.js:6192:42)
+    at Object.react_stack_bottom_frame (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:15087:22)
+    at runWithFiberInDEV (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at commitHookEffectListMount (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:7255:167)
+    at commitHookPassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:7290:60)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8689:33)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8750:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8750:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8750:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8750:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8750:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8693:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8693:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8693:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8688:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8750:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8750:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316)
+    at commitPassiveMountOnFiber (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8750:17)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3007/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:8676:316) @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5089721ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5089737ms] [LOG] [HMR] connected @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5115846ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5115908ms] [LOG] [Fast Refresh] done in 98ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5122038ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5122038ms] [LOG] [Fast Refresh] done in 102ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5132734ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 5132760ms] [LOG] [Fast Refresh] done in 63ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431

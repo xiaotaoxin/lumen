@@ -4,7 +4,7 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense } from "react";
-import { Play, Pause, SkipBack, SkipForward, Check, Download, Loader2 } from "lucide-react";
+import { Play, Pause, SkipBack, SkipForward, Download, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { PipelineGuide } from "@/components/workspace/pipeline-guide";
@@ -69,7 +69,7 @@ function PreviewInner() {
   const videosDone = frames.filter(f => f.videoUrl).length;
   const totalDuration = frames.reduce((s, f) => s + (f.duration || 3), 0);
 
-  const downloadHtml = () => {
+  const downloadVideo = () => {
     const frameList = frames.map((f, i) => {
       const src = f.videoUrl || f.imageUrl || "";
       const dur = (f.duration || 3) * 1000;
@@ -101,7 +101,7 @@ F.forEach((f,i)=>{const b=document.createElement("button");b.onclick=()=>{stop()
 show(0);play();
 </script></body></html>`;
 
-    const blob = new Blob([html], { type: "text/html" });
+    const blob = new Blob([html], { type: "text/html;charset=utf-8" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url; a.download = `${title}.html`; a.click();
@@ -122,8 +122,8 @@ show(0);play();
             <div className="text-center">
               <h1 className="text-white font-display text-2xl">{title}</h1>
               <p className="text-white/40 text-sm mt-1">{frames.length} 帧 · {videosDone} 个视频 · 总长 {totalDuration.toFixed(0)} 秒</p>
-              <Button variant="outline" size="sm" onClick={downloadHtml} className="mt-3 border-white/20 text-white hover:bg-white/10">
-                <Download className="size-3.5" /> 下载成片
+              <Button variant="outline" size="sm" onClick={downloadVideo} className="mt-3 border-white/20 text-white hover:bg-white/10">
+                <Download className="size-3.5" /> 下载成片 (HTML)
               </Button>
             </div>
 
@@ -193,8 +193,10 @@ show(0);play();
               </div>
             </div>
 
-            <div className="text-center text-white/30 text-xs">
-              下载为独立 HTML 文件，可在任何浏览器中播放
+            <div className="text-center mt-4">
+              <Button variant="outline" size="lg" onClick={downloadVideo} className="border-white/20 text-white hover:bg-white/10">
+                <Download className="size-4" /> 下载成片
+              </Button>
             </div>
           </div>
         )}
