@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 import { Play, Pause, SkipBack, SkipForward, Check, Loader2 } from "lucide-react";
@@ -80,36 +80,38 @@ function PreviewInner() {
             </div>
 
             {/* Main viewer */}
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={current}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.3 }}
-                className="w-full aspect-video rounded-2xl overflow-hidden bg-zinc-900 border border-zinc-800"
-              >
-                {currentFrame?.videoUrl ? (
-                  <img src={currentFrame.videoUrl} className="h-full w-full object-contain" alt={`Frame ${current + 1}`} />
-                ) : currentFrame?.imageUrl ? (
-                  <img src={currentFrame.imageUrl} className="h-full w-full object-contain opacity-70" alt={`Frame ${current + 1}`} />
-                ) : (
-                  <div className="flex h-full items-center justify-center text-white/30 text-sm">帧 #{current + 1} 未生成</div>
-                )}
+            <div className="relative w-full aspect-video rounded-2xl overflow-hidden bg-zinc-900 border border-zinc-800">
+              {/* Crossfade between frames */}
+              {frames.map((f, i) => {
+                const isVisible = i === current;
+                const src = f.videoUrl || f.imageUrl;
+                if (!src && !isVisible) return null;
+                return (
+                  <img
+                    key={f.id}
+                    src={src}
+                    alt={`Frame ${i + 1}`}
+                    className="absolute inset-0 h-full w-full object-contain transition-opacity duration-500"
+                    style={{ opacity: isVisible ? 1 : 0, zIndex: isVisible ? 1 : 0 }}
+                  />
+                );
+              })}
+              {!currentFrame?.videoUrl && !currentFrame?.imageUrl && (
+                <div className="absolute inset-0 flex items-center justify-center text-white/30 text-sm">帧 #{current + 1} 未生成</div>
+              )}
 
-                {/* Frame info overlay */}
-                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-6">
-                  <div className="flex items-center gap-2 mb-1">
-                    <Badge variant="outline" className="text-white border-white/20 text-[10px]">#{current + 1}</Badge>
-                    {currentFrame?.speaker && <span className="text-white/80 text-sm font-medium">{currentFrame.speaker}</span>}
-                  </div>
-                  <p className="text-white/60 text-sm">{currentFrame?.shotDescription}</p>
-                  {currentFrame?.dialogue && (
-                    <p className="text-white/40 text-xs italic mt-1">"{currentFrame.dialogue}"</p>
-                  )}
+              {/* Frame info overlay */}
+              <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-6 z-10">
+                <div className="flex items-center gap-2 mb-1">
+                  <Badge variant="outline" className="text-white border-white/20 text-[10px]">#{current + 1}</Badge>
+                  {currentFrame?.speaker && <span className="text-white/80 text-sm font-medium">{currentFrame.speaker}</span>}
                 </div>
-              </motion.div>
-            </AnimatePresence>
+                <p className="text-white/60 text-sm">{currentFrame?.shotDescription}</p>
+                {currentFrame?.dialogue && (
+                  <p className="text-white/40 text-xs italic mt-1">"{currentFrame.dialogue}"</p>
+                )}
+              </div>
+            </div>
 
             {/* Controls */}
             <div className="flex items-center gap-4">
