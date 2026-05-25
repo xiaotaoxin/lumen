@@ -525,3 +525,3274 @@ For more information, see https://radix-ui.com/primitives/docs/components/dialog
 [ 3588782ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/api/storyboards/sb_c98232d566563c1c:0
 [ 3591779ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/api/storyboards/sb_c98232d566563c1c:0
 [ 3594809ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/api/storyboards/sb_c98232d566563c1c:0
+[ 3733954ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 3734070ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:3272
+[ 3734101ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3007/app/script?_rsc=1jc2f:0
+[ 3734111ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3007/app/script?_rsc=1jc2f:0
+[ 3734129ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3007/app/script?_rsc=1jc2f:0
+[ 3734135ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3007/app/script:0
+[ 3734191ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3007/_next/static/chunks/node_modules_react-dom_0bruynb._.js:15305
+[ 3734235ms] Error: ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component]
+
+
+    at <unknown> (Error: ./app/app/script/page.tsx:212:19)
+    at Object.getCompilationErrors (file://D:\lumen\node_modules\next\dist\server\dev\hot-reloader-turbopack.js:1186:59)
+    at DevBundlerService.getCompilationError (file://D:\lumen\node_modules\next\dist\server\lib\dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file://D:\lumen\node_modules\next\dist\server\dev\next-dev-server.js:719:42)
+    at DevServer.findPageComponents (file://D:\lumen\node_modules\next\dist\server\dev\next-dev-server.js:689:43)
+    at async DevServer.renderErrorToResponseImpl (file://D:\lumen\node_modules\next\dist\server\base-server.js:1745:26)
+[ 3734239ms] [LOG] [HMR] connected @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[ 3734244ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3734255ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3734317ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3734396ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3734473ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3734536ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3734601ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3734663ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3734728ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3734790ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3734852ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3734917ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3734979ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3735043ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3735105ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3735169ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3735232ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3735294ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3735358ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3735419ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3735498ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3735560ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3735624ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3735689ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3735753ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3735816ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3735878ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3735944ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3736006ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3736069ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3736131ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3736193ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3736256ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3736319ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3736382ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3736445ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3736523ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3736588ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3736652ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3736714ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3736777ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3736840ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3736904ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3736968ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3737031ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3737093ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3737155ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3737218ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3737281ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3737346ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3737409ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3737470ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3737534ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3737597ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3737661ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3737724ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3737787ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3737849ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3737913ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3737990ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3738052ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3738115ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3738177ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3738240ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3738303ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3738365ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3738442ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3738503ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3738568ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3738630ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3738695ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3738758ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3738821ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3738882ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3738948ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3739010ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3739071ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3739134ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3739196ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3739260ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3739321ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3739386ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3739447ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3739509ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3739572ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3739634ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3739697ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3739762ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3739824ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3739889ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3739952ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3740015ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3740092ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3740171ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3740234ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3740298ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3740360ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3740439ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3740502ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3740564ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3740628ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3740694ms] [ERROR] ./app/app/script/page.tsx:212:19
+await isn't allowed in non-async function
+  210 |
+  211 |   // Also need useRouter... let me add it at top
+> 212 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  213 |
+  214 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  215 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3740800ms] [ERROR] ./app/app/script/page.tsx:213:19
+await isn't allowed in non-async function
+  211 |
+  212 |   // Also need useRouter... let me add it at top
+> 213 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  214 |
+  215 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  216 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3740862ms] [ERROR] ./app/app/script/page.tsx:213:19
+await isn't allowed in non-async function
+  211 |
+  212 |   // Also need useRouter... let me add it at top
+> 213 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  214 |
+  215 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  216 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3740924ms] [ERROR] ./app/app/script/page.tsx:213:19
+await isn't allowed in non-async function
+  211 |
+  212 |   // Also need useRouter... let me add it at top
+> 213 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  214 |
+  215 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  216 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3740999ms] [ERROR] ./app/app/script/page.tsx:213:19
+await isn't allowed in non-async function
+  211 |
+  212 |   // Also need useRouter... let me add it at top
+> 213 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  214 |
+  215 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  216 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3741077ms] [ERROR] ./app/app/script/page.tsx:213:19
+await isn't allowed in non-async function
+  211 |
+  212 |   // Also need useRouter... let me add it at top
+> 213 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  214 |
+  215 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  216 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3741137ms] [ERROR] ./app/app/script/page.tsx:213:19
+await isn't allowed in non-async function
+  211 |
+  212 |   // Also need useRouter... let me add it at top
+> 213 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  214 |
+  215 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  216 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3741201ms] [ERROR] ./app/app/script/page.tsx:213:19
+await isn't allowed in non-async function
+  211 |
+  212 |   // Also need useRouter... let me add it at top
+> 213 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  214 |
+  215 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  216 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3741261ms] [ERROR] ./app/app/script/page.tsx:213:19
+await isn't allowed in non-async function
+  211 |
+  212 |   // Also need useRouter... let me add it at top
+> 213 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  214 |
+  215 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  216 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3741325ms] [ERROR] ./app/app/script/page.tsx:213:19
+await isn't allowed in non-async function
+  211 |
+  212 |   // Also need useRouter... let me add it at top
+> 213 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  214 |
+  215 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  216 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3741389ms] [ERROR] ./app/app/script/page.tsx:213:19
+await isn't allowed in non-async function
+  211 |
+  212 |   // Also need useRouter... let me add it at top
+> 213 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  214 |
+  215 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  216 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3741451ms] [ERROR] ./app/app/script/page.tsx:213:19
+await isn't allowed in non-async function
+  211 |
+  212 |   // Also need useRouter... let me add it at top
+> 213 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  214 |
+  215 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  216 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3741515ms] [ERROR] ./app/app/script/page.tsx:213:19
+await isn't allowed in non-async function
+  211 |
+  212 |   // Also need useRouter... let me add it at top
+> 213 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  214 |
+  215 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  216 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3741577ms] [ERROR] ./app/app/script/page.tsx:213:19
+await isn't allowed in non-async function
+  211 |
+  212 |   // Also need useRouter... let me add it at top
+> 213 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  214 |
+  215 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  216 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3741641ms] [ERROR] ./app/app/script/page.tsx:213:19
+await isn't allowed in non-async function
+  211 |
+  212 |   // Also need useRouter... let me add it at top
+> 213 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  214 |
+  215 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  216 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3741704ms] [ERROR] ./app/app/script/page.tsx:213:19
+await isn't allowed in non-async function
+  211 |
+  212 |   // Also need useRouter... let me add it at top
+> 213 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  214 |
+  215 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  216 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3741769ms] [ERROR] ./app/app/script/page.tsx:213:19
+await isn't allowed in non-async function
+  211 |
+  212 |   // Also need useRouter... let me add it at top
+> 213 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  214 |
+  215 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  216 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3741831ms] [ERROR] ./app/app/script/page.tsx:213:19
+await isn't allowed in non-async function
+  211 |
+  212 |   // Also need useRouter... let me add it at top
+> 213 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  214 |
+  215 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  216 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3741895ms] [ERROR] ./app/app/script/page.tsx:213:19
+await isn't allowed in non-async function
+  211 |
+  212 |   // Also need useRouter... let me add it at top
+> 213 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  214 |
+  215 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  216 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3741957ms] [ERROR] ./app/app/script/page.tsx:213:19
+await isn't allowed in non-async function
+  211 |
+  212 |   // Also need useRouter... let me add it at top
+> 213 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  214 |
+  215 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  216 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3742021ms] [ERROR] ./app/app/script/page.tsx:213:19
+await isn't allowed in non-async function
+  211 |
+  212 |   // Also need useRouter... let me add it at top
+> 213 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  214 |
+  215 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  216 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3742085ms] [ERROR] ./app/app/script/page.tsx:213:19
+await isn't allowed in non-async function
+  211 |
+  212 |   // Also need useRouter... let me add it at top
+> 213 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  214 |
+  215 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  216 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3742146ms] [ERROR] ./app/app/script/page.tsx:213:19
+await isn't allowed in non-async function
+  211 |
+  212 |   // Also need useRouter... let me add it at top
+> 213 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  214 |
+  215 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  216 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3742209ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3742273ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3742352ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3742416ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3742477ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3742540ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3742603ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3742666ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3742727ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3742792ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3742854ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3742917ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3742982ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3743046ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3743123ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3743186ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3743251ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3743313ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3743376ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3743440ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3743503ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3743567ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3743632ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3743694ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3743758ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3743823ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3743888ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3743951ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3744014ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3744076ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3744141ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3744203ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3744267ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3744346ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3744409ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3744468ms] [ERROR] ./app/app/script/page.tsx:214:19
+await isn't allowed in non-async function
+  212 |
+  213 |   // Also need useRouter... let me add it at top
+> 214 |   const router = (await import("next/navigation")).useRouter;
+      |                   ^^^^^
+  215 |
+  216 |   const allImagesDone = frames.length > 0 && frames.every(f => f.imageUrl);
+  217 |   const allVideosDone = frames.length > 0 && frames.every(f => f.videoUrl);
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./app/app/script/page.tsx [Client Component Browser]
+    ./app/app/script/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/app/script/page.tsx [Client Component SSR]
+    ./app/app/script/page.tsx [Server Component] @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 3744554ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[ 3744674ms] [LOG] [Fast Refresh] done in 205ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[ 3744800ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[ 3744834ms] [LOG] [Fast Refresh] done in 142ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[ 3744905ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 3744926ms] [LOG] [HMR] connected @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 3775835ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 3775908ms] [LOG] [Fast Refresh] done in 85ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 3783333ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 3783390ms] [LOG] [Fast Refresh] done in 85ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 3785081ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 3785192ms] [LOG] [Fast Refresh] done in 216ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 3797389ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 3797392ms] [LOG] [Fast Refresh] done in 87ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 3806646ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 3806730ms] [LOG] [Fast Refresh] done in 149ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431

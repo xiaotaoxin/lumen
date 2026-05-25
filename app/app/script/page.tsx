@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import {
   Loader2, Sparkles, Upload, Check, ArrowRight, Play, Plus, Trash2,
@@ -13,6 +14,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { PipelineGuide } from "@/components/workspace/pipeline-guide";
 
 const BACKEND = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:3001/api";
 
@@ -48,6 +50,7 @@ const CAMERA_MOVEMENTS = ["固定", "慢推", "横移", "跟拍"];
 type Phase = "input" | "analysis" | "generating" | "done";
 
 export default function ScriptPage() {
+  const router = useRouter();
   // Script input
   const [text, setText] = React.useState("");
   const [analyzing, setAnalyzing] = React.useState(false);
@@ -196,13 +199,14 @@ export default function ScriptPage() {
     for (const f of ready) { await new Promise(r => setTimeout(r, 500)); generateVideo(f.id); }
   };
 
-  // Create series from storyboard
+  // Create series and navigate to preview
   const createSeries = async () => {
     try {
       const s = await fetchJson<{ id: string }>("/series", { method: "POST", body: JSON.stringify({ title: analysis?.title || "未命名剧集" }) });
       await fetchJson(`/series/${s.id}/episodes`, { method: "POST", body: JSON.stringify({ storyboardId, title: analysis?.title || "第1集" }) });
       setSeriesId(s.id);
-      toast.success("已创建剧集！");
+      toast.success("已创建剧集，跳转到预览页");
+      router.push("/app/series");
     } catch (e) { toast.error((e as Error).message); }
   };
 
@@ -211,6 +215,7 @@ export default function ScriptPage() {
 
   return (
     <div className="flex h-full flex-col">
+      <PipelineGuide />
       <div className="flex-1 overflow-y-auto">
         <div className="mx-auto max-w-full px-8 py-8 space-y-8">
 

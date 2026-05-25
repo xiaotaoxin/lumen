@@ -40,6 +40,17 @@ export default function SeriesPage() {
   const [showAddEp, setShowAddEp] = React.useState(false);
   const [sessions, setSessions] = React.useState<SessionRow[]>([]);
   const [storyboards, setStoryboards] = React.useState<StoryboardRow[]>([]);
+  const [previewFrames, setPreviewFrames] = React.useState<Array<{ id: string; imageUrl?: string; videoUrl?: string; shotDescription: string }>>([]);
+  const [previewEpId, setPreviewEpId] = React.useState<string | null>(null);
+
+  const loadPreview = async (ep: { storyboardId?: string; id: string }) => {
+    if (!ep.storyboardId || ep.id === previewEpId) { setPreviewEpId(null); setPreviewFrames([]); return; }
+    try {
+      const data = await api<{ frames?: Array<{ id: string; imageUrl?: string; videoUrl?: string; shotDescription: string }> }>(`/storyboards/${ep.storyboardId}`);
+      setPreviewFrames(data.frames || []);
+      setPreviewEpId(ep.id);
+    } catch { /* noop */ }
+  };
 
   const reload = React.useCallback(async () => {
     try { setList(await api("/series")); } catch { /* noop */ }
@@ -121,11 +132,32 @@ export default function SeriesPage() {
                   <Button variant="ghost" size="icon-sm" onClick={() => router.push(`/app/text-to-image?s=${ep.sessionId}`)} title="打开会话"><ChevronRight className="size-3.5" /></Button>
                 )}
                 {ep.storyboardId && (
-                  <Button variant="ghost" size="icon-sm" onClick={() => router.push(`/app/storyboards`)} title="打开分镜"><ChevronRight className="size-3.5" /></Button>
+                  <Button variant="ghost" size="sm" onClick={() => loadPreview(ep)} className="text-xs">
+                    {previewEpId === ep.id ? "收起预览" : "预览成片"}
+                  </Button>
                 )}
                 <Button variant="ghost" size="icon-sm" onClick={() => removeEpisode(ep.id)}><Trash2 className="size-3.5 text-muted-foreground" /></Button>
               </div>
             ))
+          )}
+
+          {/* Preview strip */}
+          {previewFrames.length > 0 && (
+            <div className="mt-6 border-t border-border pt-4">
+              <div className="text-sm font-medium mb-3">视频预览 · {previewFrames.length} 帧按序排列</div>
+              <div className="flex gap-2 overflow-x-auto pb-3">
+                {previewFrames.map((f, i) => (
+                  <div key={f.id} className="shrink-0 w-48 space-y-1">
+                    <div className="aspect-video rounded-lg bg-secondary overflow-hidden">
+                      {f.videoUrl ? <img src={f.videoUrl} className="h-full w-full object-cover" /> :
+                       f.imageUrl ? <img src={f.imageUrl} className="h-full w-full object-cover opacity-60" /> :
+                       <div className="flex h-full items-center justify-center text-xs text-muted-foreground">待生成</div>}
+                    </div>
+                    <div className="text-[10px] text-muted-foreground">#{i + 1} {f.shotDescription?.slice(0, 20)}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
           )}
         </div>
 
