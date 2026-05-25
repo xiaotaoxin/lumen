@@ -14,6 +14,7 @@ import filesRoutes from "./routes/files";
 import proxyRoutes from "./routes/proxy";
 import llmRoutes from "./routes/llm";
 import charactersRoutes from "./routes/characters";
+import storyboardsRoutes from "./routes/storyboards";
 
 const app = new Hono();
 
@@ -48,10 +49,11 @@ app.route("/api/media", mediaRoutes);
 // File upload & serve
 app.route("/api/files", filesRoutes);
 
-// AI Provider proxy + LLM + Characters
+// AI Provider proxy + LLM + Characters + Storyboards
 app.route("/api/proxy", proxyRoutes);
 app.route("/api/llm", llmRoutes);
 app.route("/api/characters", charactersRoutes);
+app.route("/api/storyboards", storyboardsRoutes);
 
 // Data migration from localStorage (open, idempotent)
 app.post("/api/migrate", async (c) => {

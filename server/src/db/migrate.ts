@@ -146,6 +146,35 @@ export function runMigrations(): void {
       updated_at      TEXT NOT NULL
     );
     CREATE INDEX IF NOT EXISTS idx_character_assets_subject ON character_assets(subject_id);
+
+    CREATE TABLE IF NOT EXISTS storyboards (
+      id          TEXT PRIMARY KEY,
+      user_id     TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+      session_id  TEXT REFERENCES chat_sessions(id) ON DELETE SET NULL,
+      title       TEXT NOT NULL DEFAULT '未命名分镜',
+      created_at  TEXT NOT NULL,
+      updated_at  TEXT NOT NULL
+    );
+    CREATE INDEX IF NOT EXISTS idx_storyboards_user ON storyboards(user_id);
+
+    CREATE TABLE IF NOT EXISTS storyboard_frames (
+      id                TEXT PRIMARY KEY,
+      storyboard_id     TEXT NOT NULL REFERENCES storyboards(id) ON DELETE CASCADE,
+      order_index       INTEGER NOT NULL DEFAULT 0,
+      shot_description  TEXT NOT NULL DEFAULT '',
+      shot_size         TEXT DEFAULT '中景',
+      camera_angle      TEXT DEFAULT '平视',
+      camera_movement   TEXT DEFAULT '固定',
+      dialogue          TEXT DEFAULT '',
+      speaker           TEXT DEFAULT '',
+      image_prompt      TEXT DEFAULT '',
+      image_url         TEXT,
+      status            TEXT NOT NULL DEFAULT 'idle' CHECK (status IN ('idle', 'running', 'succeeded', 'failed')),
+      error_message     TEXT,
+      created_at        TEXT NOT NULL,
+      updated_at        TEXT NOT NULL
+    );
+    CREATE INDEX IF NOT EXISTS idx_storyboard_frames_board ON storyboard_frames(storyboard_id);
   `);
 
   // Run Drizzle Kit migrations if any
