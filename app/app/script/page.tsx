@@ -199,14 +199,13 @@ export default function ScriptPage() {
     for (const f of ready) { await new Promise(r => setTimeout(r, 500)); generateVideo(f.id); }
   };
 
-  // Create series and navigate to preview
+  // Create series and show preview inline
   const createSeries = async () => {
     try {
       const s = await fetchJson<{ id: string }>("/series", { method: "POST", body: JSON.stringify({ title: analysis?.title || "未命名剧集" }) });
       await fetchJson(`/series/${s.id}/episodes`, { method: "POST", body: JSON.stringify({ storyboardId, title: analysis?.title || "第1集" }) });
       setSeriesId(s.id);
-      toast.success("已创建剧集，跳转到预览页");
-      router.push("/app/series");
+      toast.success("剧集已创建！下方可预览成片");
     } catch (e) { toast.error((e as Error).message); }
   };
 
@@ -395,10 +394,26 @@ export default function ScriptPage() {
                 </div>
               )}
               {seriesId && (
-                <div className="rounded-xl border border-emerald-400/40 bg-emerald-500/5 p-4 text-center">
-                  <Check className="size-6 text-emerald-500 mx-auto mb-1" />
-                  <div className="font-medium text-sm">流程完成！</div>
-                  <div className="text-xs text-muted-foreground">剧集已创建，去剧集页管理导出</div>
+                <div className="rounded-xl border border-emerald-400/40 bg-emerald-500/5 p-6 space-y-3">
+                  <div className="flex items-center gap-2">
+                    <Check className="size-5 text-emerald-500" />
+                    <span className="font-medium text-sm">成片预览</span>
+                    <span className="text-xs text-muted-foreground">{frames.length} 帧按序排列</span>
+                  </div>
+                  <div className="flex gap-3 overflow-x-auto pb-2">
+                    {frames.map((f, i) => (
+                      <div key={f.id} className="shrink-0 w-56 space-y-1.5">
+                        <div className="aspect-video rounded-lg bg-secondary overflow-hidden cursor-pointer" onClick={() => (f.videoUrl || f.imageUrl) && setPreviewUrl(f.videoUrl || f.imageUrl || null)}>
+                          {f.videoUrl ? <img src={f.videoUrl} className="h-full w-full object-cover" /> :
+                           f.imageUrl ? <img src={f.imageUrl} className="h-full w-full object-cover opacity-50" /> :
+                           <div className="flex h-full items-center justify-center text-xs text-muted-foreground">—</div>}
+                        </div>
+                        <div className="text-[10px] text-muted-foreground leading-tight">
+                          <span className="font-medium">#{i + 1}</span> {f.shotDescription?.slice(0, 30)}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               )}
             </motion.section>
