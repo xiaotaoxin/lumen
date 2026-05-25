@@ -122,8 +122,8 @@ export function PipelineGuide() {
             创作进度
           </button>
           {nextStep && !allDone && (
-            <button onClick={() => router.push(nextStep.href)} className="text-xs text-brand-500 hover:underline flex items-center gap-1 ml-auto">
-              {nextStep.label} <ArrowRight className="size-3" />
+            <button onClick={() => router.push(nextStep.href)} className="flex items-center gap-1.5 rounded-full bg-brand-500 px-3 py-1 text-xs font-medium text-white hover:brightness-110 transition-all ml-auto">
+              下一步：{nextStep.label} <ArrowRight className="size-3" />
             </button>
           )}
         </div>
@@ -173,20 +173,14 @@ export function PipelineGuide() {
           })}
         </div>
 
-        {/* Next step hint */}
+        {/* Next step button */}
         {nextStep && !allDone && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="mt-2 flex items-center gap-2 text-xs"
-          >
-            <span className="text-muted-foreground">下一步：</span>
+          <motion.div initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }} className="mt-3">
             <button
               onClick={() => router.push(nextStep.href)}
-              className="inline-flex items-center gap-1 text-brand-500 hover:underline font-medium"
+              className="inline-flex items-center gap-2 rounded-full bg-brand-500 px-4 py-1.5 text-sm font-medium text-white hover:brightness-110 transition-all shadow-sm"
             >
-              {nextStep.label}
-              <ArrowRight className="size-3" />
+              下一步：{nextStep.label} <ArrowRight className="size-4" />
             </button>
           </motion.div>
         )}
