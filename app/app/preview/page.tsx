@@ -122,9 +122,6 @@ show(0);play();
             <div className="text-center">
               <h1 className="text-white font-display text-2xl">{title}</h1>
               <p className="text-white/40 text-sm mt-1">{frames.length} 帧 · {videosDone} 个视频 · 总长 {totalDuration.toFixed(0)} 秒</p>
-              <Button variant="outline" size="sm" onClick={downloadVideo} className="mt-3 border-white/20 text-white hover:bg-white/10">
-                <Download className="size-3.5" /> 下载成片 (HTML)
-              </Button>
             </div>
 
             {/* Main viewer */}
