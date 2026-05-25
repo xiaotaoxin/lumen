@@ -68,8 +68,16 @@ export function PipelineGuide() {
           },
         },
         {
-          key: "video", label: "图生视频", icon: Clapperboard, href: "/app/image-to-video",
-          check: async () => false,
+          key: "video", label: "图生视频", icon: Clapperboard, href: "/app/storyboards",
+          check: async () => {
+            const boards = await fetchJson("/storyboards") as Array<{ id: string }>;
+            if (boards.length === 0) return false;
+            for (const b of boards.slice(0, 3)) {
+              const full = await fetchJson(`/storyboards/${b.id}`) as { frames?: Array<{ videoUrl?: string }> };
+              if (full.frames?.some(f => f.videoUrl)) return true;
+            }
+            return false;
+          },
         },
         {
           key: "series", label: "组成剧集", icon: BookOpen, href: "/app/series",
