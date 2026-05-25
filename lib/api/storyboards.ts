@@ -64,3 +64,7 @@ export async function reorderFrames(boardId: string, ids: string[]): Promise<voi
 export async function generateFrame(boardId: string, frameId: string): Promise<StoryboardFrame> {
   return api(`/storyboards/${boardId}/frames/${frameId}/generate`, { method: "POST" });
 }
+
+export async function generateVideo(boardId: string, frameId: string): Promise<StoryboardFrame> {
+  return api(`/storyboards/${boardId}/frames/${frameId}/generate-video`, { method: "POST" });
+}

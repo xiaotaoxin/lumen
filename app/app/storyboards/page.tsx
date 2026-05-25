@@ -85,6 +85,17 @@ export default function StoryboardsPage() {
     try { await sbApi.reorderFrames(activeBoard!.id, next.map(f => f.id)); } catch { /* noop */ }
   };
 
+  const generateVideo = async (frameId: string) => {
+    if (!activeBoard) return;
+    setFrames(prev => prev.map(f => f.id === frameId ? { ...f, status: "running" } : f));
+    try {
+      const result = await sbApi.generateVideo(activeBoard.id, frameId);
+      pollFrameResult(activeBoard.id, frameId);
+    } catch (e) {
+      setFrames(prev => prev.map(f => f.id === frameId ? { ...f, status: "failed", errorMessage: (e as Error).message } : f));
+    }
+  };
+
   const generateFrame = async (frameId: string) => {
     if (!activeBoard) return;
     setFrames(prev => prev.map(f => f.id === frameId ? { ...f, status: "running" } : f));
@@ -176,9 +187,14 @@ export default function StoryboardsPage() {
                     <select className="text-xs border rounded px-1.5 py-0.5 bg-transparent" value={frame.cameraMovement} onChange={e => updateFrame(frame.id, { cameraMovement: e.target.value })}>
                       {CAMERA_MOVEMENTS.map(s => <option key={s} value={s}>{s}</option>)}
                     </select>
-                    <Button variant="ghost" size="icon-sm" onClick={() => generateFrame(frame.id)} disabled={frame.status === "running"}>
+                    <Button variant="ghost" size="icon-sm" onClick={() => generateFrame(frame.id)} disabled={frame.status === "running"} title="生成图片">
                       {frame.status === "running" ? <Loader2 className="size-3.5 animate-spin" /> : <Sparkles className="size-3.5 text-brand-500" />}
                     </Button>
+                    {frame.status === "succeeded" && frame.imageUrl && (
+                      <Button variant="ghost" size="icon-sm" onClick={() => generateVideo(frame.id)} title="图生视频">
+                        <Play className="size-3.5 text-brand-500" />
+                      </Button>
+                    )}
                     <Button variant="ghost" size="icon-sm" onClick={() => deleteFrame(frame.id)}><Trash2 className="size-3.5 text-muted-foreground" /></Button>
                   </div>
 

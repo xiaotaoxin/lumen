@@ -68,11 +68,8 @@ export function PipelineGuide() {
           },
         },
         {
-          key: "video", label: "图生视频", icon: Clapperboard, href: "/app/storyboards",
-          check: async () => {
-            const gens = await fetchJson("/generations?kind=video") as Array<{ status: string }>;
-            return gens.some((g: { status: string }) => g.status === "succeeded");
-          },
+          key: "video", label: "图生视频", icon: Clapperboard, href: "/app/image-to-video",
+          check: async () => false,
         },
         {
           key: "series", label: "组成剧集", icon: BookOpen, href: "/app/series",
