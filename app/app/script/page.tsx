@@ -206,7 +206,7 @@ export default function ScriptPage() {
   return (
     <div className="flex h-full flex-col">
       <div className="flex-1 overflow-y-auto">
-        <div className="mx-auto max-w-5xl p-8 space-y-8">
+        <div className="mx-auto max-w-full px-8 py-8 space-y-8">
 
           <div>
             <h1 className="font-display text-3xl tracking-tight">创作流水线</h1>
@@ -340,7 +340,7 @@ export default function ScriptPage() {
                       )}
                       <Button variant="ghost" size="icon-sm" onClick={() => deleteFrame(frame.id)}><Trash2 className="size-3.5 text-muted-foreground" /></Button>
                     </div>
-                    <div className="grid grid-cols-[220px_280px_1fr] gap-3 p-3">
+                    <div className="grid grid-cols-[280px_360px_1fr] gap-4 p-4">
                       {/* Image */}
                       <div className="aspect-square rounded-lg bg-secondary overflow-hidden cursor-pointer" onClick={() => frame.imageUrl && setPreviewUrl(frame.imageUrl)}>
                         {frame.imageUrl ? <img src={frame.imageUrl} className="h-full w-full object-cover" /> :
