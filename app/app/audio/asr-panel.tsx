@@ -63,6 +63,7 @@ function segmentsToSrt(segs: AsrSegment[]): string {
 type Source = "file" | "url";
 
 export function AsrPanel() {
+  const fileRef = React.useRef<HTMLInputElement>(null);
   const [source, setSource] = React.useState<Source>("file");
   const [file, setFile] = React.useState<File | null>(null);
   const [audioUrl, setAudioUrl] = React.useState<string>("");
@@ -208,15 +209,18 @@ export function AsrPanel() {
             <>
               <Label className="text-xs">音频 / 视频文件（≤ 25MB）</Label>
               {!file ? (
-                <label className="mt-2 flex cursor-pointer flex-col items-center justify-center rounded-xl border-2 border-dashed border-border bg-surface-1 py-12 hover:bg-secondary/30">
-                  <Upload className="size-6 text-muted-foreground" />
-                  <span className="mt-2 text-sm">点击选择文件</span>
-                  <span className="mt-1 text-[11px] text-muted-foreground">
-                    支持 mp3 / wav / m4a / mp4 等 · 同步识别仅返回纯文本（无时间戳）
-                  </span>
-                  <input type="file" accept="audio/*,video/*" className="hidden"
-                    onChange={(e) => onFile(e.target.files?.[0] ?? null)} />
-                </label>
+                <div className="mt-2">
+                  <input ref={fileRef} type="file" accept="audio/*,video/*" className="hidden"
+                    onChange={(e) => { onFile(e.target.files?.[0] ?? null); e.target.value = ""; }} />
+                  <button type="button" onClick={() => fileRef.current?.click()}
+                    className="flex w-full cursor-pointer flex-col items-center justify-center rounded-xl border-2 border-dashed border-border bg-surface-1 py-12 hover:bg-secondary/30">
+                    <Upload className="size-6 text-muted-foreground" />
+                    <span className="mt-2 text-sm">点击选择文件</span>
+                    <span className="mt-1 text-[11px] text-muted-foreground">
+                      支持 mp3 / wav / m4a / mp4 等 · 同步识别仅返回纯文本（无时间戳）
+                    </span>
+                  </button>
+                </div>
               ) : (
                 <div className="mt-2 flex items-center gap-3 rounded-xl border border-border bg-surface-1 p-3">
                   <FileAudio className="size-5 text-muted-foreground" />

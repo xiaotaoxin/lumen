@@ -3,6 +3,7 @@
 import * as React from "react";
 import { ImagePlus, Loader2, Pencil, Plus, Search, Trash2, X } from "lucide-react";
 import { toast } from "sonner";
+import { cn } from "@/lib/utils";
 import {
   Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle,
 } from "@/components/ui/dialog";
@@ -189,18 +190,45 @@ function SubjectEditor({
   const user = useAuthStore((s) => s.user);
   const [name, setName] = React.useState(subject?.name ?? "");
   const [description, setDescription] = React.useState(subject?.description ?? "");
+  const fileRef = React.useRef<HTMLInputElement>(null);
   const [imageUrl, setImageUrl] = React.useState(subject?.imageUrl);
   const [tags, setTags] = React.useState<string[]>(subject?.tags ?? []);
   const [busy, setBusy] = React.useState(false);
-
-  const onPickFile = (file: File) => {
+  const [uploading, setUploading] = React.useState(false);
+  const onPickFile = async (file: File) => {
     if (file.size > 10 * 1024 * 1024) {
       toast.error("参考图不能大于 10MB");
       return;
     }
-    const reader = new FileReader();
-    reader.onload = () => setImageUrl(reader.result as string);
-    reader.readAsDataURL(file);
+    setUploading(true);
+    try {
+      // Convert to base64 then upload to server to get a stable URL
+      const reader = new FileReader();
+      const dataUrl = await new Promise<string>((resolve) => {
+        reader.onload = () => resolve(reader.result as string);
+        reader.readAsDataURL(file);
+      });
+      const BACKEND = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:3001/api";
+      const token = (await import("@/lib/api/client")).getToken();
+      const res = await fetch(`${BACKEND}/files/upload`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          ...(token ? { Authorization: `Bearer ${token}` } : {}),
+        },
+        body: JSON.stringify({
+          dataUrl,
+          filename: `subject-${Date.now()}.${file.name.split(".").pop() || "png"}`,
+        }),
+      });
+      if (!res.ok) throw new Error("上传失败");
+      const data = await res.json() as { url: string };
+      setImageUrl(data.url);
+    } catch (e) {
+      toast.error((e as Error).message || "上传失败");
+    } finally {
+      setUploading(false);
+    }
   };
 
   const toggleTag = (t: string) =>
@@ -249,20 +277,36 @@ function SubjectEditor({
               </button>
             </div>
           ) : (
-            <label className="flex aspect-square cursor-pointer flex-col items-center justify-center gap-2 rounded-xl border-2 border-dashed border-border bg-card transition-colors hover:border-brand-400/40">
-              <ImagePlus className="size-5 text-muted-foreground" />
-              <div className="text-[11px] text-muted-foreground">上传图片</div>
-              <div className="text-[10px] text-muted-foreground/70">PNG/JPG ≤ 10MB</div>
+            <>
               <input
+                ref={fileRef}
                 type="file"
                 accept="image/png,image/jpeg,image/webp"
                 className="hidden"
                 onChange={(e) => {
                   const f = e.target.files?.[0];
                   if (f) onPickFile(f);
+                  e.target.value = "";
                 }}
               />
-            </label>
+              <button
+                type="button"
+                disabled={uploading}
+                onClick={() => fileRef.current?.click()}
+                className={cn(
+                  "flex aspect-square w-full cursor-pointer flex-col items-center justify-center gap-2 rounded-xl border-2 border-dashed border-border bg-card transition-colors",
+                  uploading ? "opacity-50" : "hover:border-brand-400/40",
+                )}
+              >
+                {uploading ? (
+                  <Loader2 className="size-5 animate-spin text-muted-foreground" />
+                ) : (
+                  <ImagePlus className="size-5 text-muted-foreground" />
+                )}
+                <div className="text-[11px] text-muted-foreground">{uploading ? "上传中…" : "上传图片"}</div>
+                <div className="text-[10px] text-muted-foreground/70">PNG/JPG ≤ 10MB</div>
+              </button>
+            </>
           )}
         </div>
         <div className="space-y-4">

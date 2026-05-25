@@ -125,7 +125,7 @@ export default function SubjectsPage() {
                   <div className="mt-2 text-[11px] text-muted-foreground">{formatRelativeTime(s.updatedAt)}</div>
                 </div>
               </div>
-              <div className="flex items-center justify-end gap-1 border-t border-border bg-surface-2 px-3 py-2 opacity-0 transition-opacity group-hover:opacity-100">
+              <div className="flex items-center justify-end gap-1 border-t border-border bg-surface-2 px-3 py-2">
                 <Button
                   variant="ghost"
                   size="sm"

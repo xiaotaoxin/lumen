@@ -42,6 +42,7 @@ const STEM_LABELS: Record<Stem["name"], string> = {
 };
 
 export function SeparatePanel() {
+  const fileRef = React.useRef<HTMLInputElement>(null);
   const [file, setFile] = React.useState<File | null>(null);
   const [spaceId, setSpaceId] = React.useState<string>(SPACES[0].id);
   const [busy, setBusy] = React.useState(false);
@@ -126,13 +127,16 @@ export function SeparatePanel() {
         <div className="rounded-2xl border border-border bg-card p-5">
           <Label className="text-xs">音频文件</Label>
           {!file ? (
-            <label className="mt-2 flex cursor-pointer flex-col items-center justify-center rounded-xl border-2 border-dashed border-border bg-surface-1 py-12 hover:bg-secondary/30">
-              <Upload className="size-6 text-muted-foreground" />
-              <span className="mt-2 text-sm">点击选择文件</span>
-              <span className="mt-1 text-[11px] text-muted-foreground">支持 mp3 / wav · 推荐 ≤ 50MB（公共 Space 限制）</span>
-              <input type="file" accept="audio/*" className="hidden"
-                onChange={(e) => onFile(e.target.files?.[0] ?? null)} />
-            </label>
+            <div className="mt-2">
+              <input ref={fileRef} type="file" accept="audio/*" className="hidden"
+                onChange={(e) => { onFile(e.target.files?.[0] ?? null); e.target.value = ""; }} />
+              <button type="button" onClick={() => fileRef.current?.click()}
+                className="flex w-full cursor-pointer flex-col items-center justify-center rounded-xl border-2 border-dashed border-border bg-surface-1 py-12 hover:bg-secondary/30">
+                <Upload className="size-6 text-muted-foreground" />
+                <span className="mt-2 text-sm">点击选择文件</span>
+                <span className="mt-1 text-[11px] text-muted-foreground">支持 mp3 / wav · 推荐 ≤ 50MB（公共 Space 限制）</span>
+              </button>
+            </div>
           ) : (
             <div className="mt-2 flex items-center gap-3 rounded-xl border border-border bg-surface-1 p-3">
               <FileAudio className="size-5 text-muted-foreground" />
