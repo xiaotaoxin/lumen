@@ -438,3 +438,6 @@ Fast Refresh requires at least one parent function component in your React tree.
 [ 2580149ms] [LOG] [Fast Refresh] done in 331ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
 [ 2613817ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
 [ 2613881ms] [LOG] [Fast Refresh] done in 90ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2651260ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3001/api/script/analyze:0
+[ 2713218ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2713343ms] [LOG] [Fast Refresh] done in 235ms @ http://localhost:3007/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431

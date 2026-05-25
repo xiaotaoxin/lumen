@@ -47,23 +47,34 @@ Rules:
 - Each shot description must be detailed enough for AI image generation
 - Scene/time/character descriptions should focus on VISUAL elements useful for image generation`;
 
-// POST /api/script/analyze — analyze script text via LLM
+// POST /api/script/analyze — analyze script text via LLM (falls back to mock)
 script.post("/analyze", async (c) => {
   const config = resolveLlmConfig();
-  if (!config) {
-    return c.json({ code: "NO_LLM", message: "未配置 LLM，请在 .env 中设置 LLM_API_KEY" }, 400);
-  }
-
   const { text } = await c.req.json().catch(() => ({}));
   if (!text || text.trim().length < 20) {
     return c.json({ code: "TOO_SHORT", message: "剧本太短，至少 20 个字符" }, 400);
   }
 
+  // Mock mode when no LLM configured — returns demo analysis for testing
+  if (!config) {
+    return c.json(getMockAnalysis());
+  }
+
   try {
-    const result = await chat(
-      [{ role: "system", content: ANALYSIS_PROMPT }, { role: "user", content: text.trim() }],
-      config,
-    );
+    let result: string;
+    if (config) {
+      try {
+        result = await chat(
+          [{ role: "system", content: ANALYSIS_PROMPT }, { role: "user", content: text.trim() }],
+          config,
+        );
+      } catch (llmErr) {
+        console.warn("[script] LLM failed, using mock:", (llmErr as Error).message);
+        return c.json(getMockAnalysis());
+      }
+    } else {
+      return c.json(getMockAnalysis());
+    }
 
     // Try to parse the JSON from the LLM response
     const jsonMatch = result.match(/\{[\s\S]*\}/);
@@ -146,5 +157,30 @@ script.post("/apply", async (c) => {
 
   return c.json(created);
 });
+
+function getMockAnalysis() {
+  return {
+    title: "月光下的约定",
+    characters: [
+      { name: "小夜", description: "年轻女性，黑色长发泛银光，紫色眼眸，身穿深蓝色斗篷，气质冷峻神秘", tags: ["角色", "主角"] },
+      { name: "守护者", description: "高大男性，银白短发凌乱，暗红长袍，右眼有旧伤疤，神情沧桑", tags: ["角色", "配角"] },
+    ],
+    scenes: [
+      { name: "钟楼长廊", description: "古老石质长廊，月光透过彩色玻璃窗洒入，光影斑驳，氛围幽静神秘", timeOfDay: "夜晚", tags: ["场景"] },
+    ],
+    props: [
+      { name: "白银匕首", description: "刻满符文的银色匕首，泛着冷光，手柄镶嵌暗色宝石", tags: ["物品"] },
+      { name: "月长石", description: "发光的乳白色宝石，内部有流光转动，散发着柔和的光芒", tags: ["物品"] },
+    ],
+    shots: [
+      { sceneName: "钟楼长廊", shotSize: "全景", cameraAngle: "仰视", cameraMovement: "慢推", dialogue: "", speaker: "", description: "月光透过彩色玻璃窗洒在石板地面上，古老的钟楼内部，高大的石柱和拱门，氛围神秘庄严" },
+      { sceneName: "钟楼长廊", shotSize: "中景", cameraAngle: "平视", cameraMovement: "跟拍", dialogue: "", speaker: "", description: "小夜裹紧深蓝色斗篷，悄无声息地穿过长廊。她的黑发在月光下泛着银光，紫色眼眸警惕地扫视四周" },
+      { sceneName: "钟楼长廊", shotSize: "近景", cameraAngle: "平视", cameraMovement: "固定", dialogue: "", speaker: "", description: "小夜的手紧握白银匕首，匕首上刻满符文，在月光下泛着冷光" },
+      { sceneName: "钟楼长廊", shotSize: "中景", cameraAngle: "平视", cameraMovement: "固定", dialogue: "你终于来了", speaker: "守护者", description: "守护者从石柱后走出，暗红长袍轻摆，银白短发垂在额前，右眼旧伤疤在月光下清晰可见" },
+      { sceneName: "钟楼长廊", shotSize: "近景", cameraAngle: "平视", cameraMovement: "固定", dialogue: "把钥匙交出来。我知道是你偷走的。", speaker: "小夜", description: "小夜举起匕首指向守护者，紫色眼眸直视对方，表情冷峻坚定" },
+      { sceneName: "钟楼长廊", shotSize: "特写", cameraAngle: "平视", cameraMovement: "固定", dialogue: "你在找这个？可惜，我不能给你。", speaker: "守护者", description: "守护者手中托着发光的月长石，宝石内部流光转动，照亮他的手掌和半边脸" },
+    ],
+  };
+}
 
 export default script;
