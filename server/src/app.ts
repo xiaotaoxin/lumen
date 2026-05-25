@@ -12,6 +12,7 @@ import modelsRoutes from "./routes/models";
 import mediaRoutes from "./routes/media";
 import filesRoutes from "./routes/files";
 import proxyRoutes from "./routes/proxy";
+import llmRoutes from "./routes/llm";
 
 const app = new Hono();
 
@@ -46,8 +47,9 @@ app.route("/api/media", mediaRoutes);
 // File upload & serve
 app.route("/api/files", filesRoutes);
 
-// AI Provider proxy
+// AI Provider proxy + LLM
 app.route("/api/proxy", proxyRoutes);
+app.route("/api/llm", llmRoutes);
 
 // Data migration from localStorage (open, idempotent)
 app.post("/api/migrate", async (c) => {

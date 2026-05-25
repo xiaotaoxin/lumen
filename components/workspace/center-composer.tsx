@@ -2,11 +2,11 @@
 
 import * as React from "react";
 import {
-  ArrowUp, AtSign, ChevronDown, FilmIcon, ImagePlus, Lightbulb, Loader2,
-  Settings2, Sparkles, X,
+  ArrowUp, AtSign, ChevronDown, FilmIcon, ImagePlus, Lightbulb, Loader2, Settings2, Sparkles, X,
 } from "lucide-react";
 import { toast } from "sonner";
 import { cn } from "@/lib/utils";
+import * as llmApi from "@/lib/api/llm";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
@@ -102,6 +102,21 @@ export function CenterComposer({
   const setHighlight = _setHighlight;
 
   const closeMention = () => setMention({ active: false, anchor: -1, query: "" });
+
+  const [polishing, setPolishing] = React.useState(false);
+  const onPolish = async () => {
+    if (!prompt.trim() || polishing) return;
+    setPolishing(true);
+    try {
+      const result = await llmApi.polishPrompt(prompt.trim(), "image");
+      onPromptChange(result.polished);
+      toast.success("提示词已润色");
+    } catch (e) {
+      toast.error((e as Error).message || "润色失败");
+    } finally {
+      setPolishing(false);
+    }
+  };
 
   const refMentions = React.useMemo<RefMention[]>(
     () => references.map((url, i) => ({
@@ -641,6 +656,19 @@ export function CenterComposer({
           </Popover>
 
           <div className="flex-1" />
+
+          {/* Polish */}
+          {!isRunning && prompt.trim() && (
+            <button
+              type="button"
+              onClick={onPolish}
+              disabled={polishing}
+              className="flex size-9 items-center justify-center rounded-full text-muted-foreground hover:bg-secondary hover:text-brand-500 transition-all"
+              title="AI 润色提示词"
+            >
+              <Sparkles className={cn("size-4", polishing && "animate-pulse")} />
+            </button>
+          )}
 
           {/* Send / Cancel */}
           {isRunning ? (
