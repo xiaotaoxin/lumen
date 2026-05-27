@@ -173,7 +173,6 @@ app/globals.css                       Tailwind + 设计 token + 画布 cursor �
 
 ## 设计原则
 
-- **不抄袭、不像素复刻**：参考即梦 / TapNow / LibTV 的页面节奏与信息密度，但**配色 / 字体 / Logo / 文案 / 组件细节全部原创**。
 - **编辑型排版**：标题用衬线字体（Fraunces），正文用 Inter，避免廉价极简感。
 - **不用 glassmorphism**：背景靠 oklch 色彩 + aurora 渐变 + 颗粒纹理叠加。
 - **暗色优先**：默认深色，浅色为完整支持。
