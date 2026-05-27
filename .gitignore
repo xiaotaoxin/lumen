@@ -34,6 +34,7 @@ yarn-error.log*
 .env*
 
 # lumen — 服务端密钥与本地数据库（绝不入 git）
+.npmrc
 .lumen-master.key
 .jwt-secret
 *.db
@@ -44,6 +45,13 @@ backup/
 
 # vercel
 .vercel
+
+# misc project files
+lumen-package.zip
+start.cmd
+.playwright-mcp/
+.vscode/
+PROJECT_DOCS.md
 
 # typescript
 *.tsbuildinfo
